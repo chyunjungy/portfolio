@@ -1,0 +1,2146 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;900&family=Open+Sans&display=swap');
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+
+
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    overflow: hidden;
+
+    font-family: 'Anton', sans-serif;
+}
+
+svg {
+    cursor: pointer;
+}
+
+
+
+/* bg 설정 */
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background-color: #FF5BA8;
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+}
+
+.logo {
+
+    width: 20vw;
+    height: 6vw;
+
+    background-color: #eee;
+    z-index: 30;
+    position: fixed;
+    top: 4vh;
+    left: 3vw;
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+
+.logo h1 {
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/logo.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bgBox {
+    width: 20vw;
+    height: 10vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    z-index: 10;
+}
+
+
+.bg .bg_inner {
+    width: 85vw;
+    height: 90vh;
+    position: fixed;
+    left: 5vw;
+    top: 0;
+    background-color: #fff;
+}
+
+.bg_inner .icon {
+    position: fixed;
+    top: 20vh;
+    left: 10vw;
+    background-color: #fff;
+
+
+}
+
+.icon i {
+    font-size: 1.5vw;
+    display: block;
+    text-align: center;
+    color: #FF5BA8;
+    margin-top: 2.6vh;
+    transition: all 0.5s;
+
+}
+
+.icon svg {
+    width: 1.5vw;
+    height: 1.5vw;
+    display: block;
+    margin-bottom: 2vh;
+    color: #FF5BA8;
+    transition: all 0.5s;
+}
+
+.icon i:hover {
+    transform: scale(1.4);
+}
+
+.icon svg:hover {
+    transform: scale(1.4);
+}
+
+
+
+
+
+/* nav 설정 */
+
+nav {
+    position: fixed;
+    right: 0%;
+    top: 0;
+    height: 10vh;
+    width: 80vw;
+    background-color: #FF5BA8;
+    z-index: 20;
+
+}
+
+.navBar {
+    height: 10vh;
+    width: 70vw;
+    position: fixed;
+    left: 20vw;
+    top: 0;
+    background-color: #fff;
+
+
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+}
+
+nav li {
+    width: 16.6666%;
+    /* background-color: yellow; */
+}
+
+nav li.on {
+    background-color: #FFBBE6;
+}
+
+nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF5BA8;
+    font-size: 1.2vw;
+
+}
+
+
+
+nav li a span {
+    width: 8%;
+    height: 5%;
+    position: fixed;
+    background-color: #FF5BA8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+nav li:nth-child(2) a {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+
+
+nav li a:hover {
+    background-color: #ffd9f1;
+}
+
+
+
+
+
+/* wrap 설정 */
+#wrap {
+    position: absolute;
+    width: 100%;
+    left: 20%;
+    top: 0%;
+
+}
+
+#wrap section {
+    width: 80%;
+}
+
+#wrap section:nth-child(1) {
+    background-color: #aaa;
+    margin-top: 10vh;
+}
+
+#wrap section:nth-child(2) {
+    background-color: #C6B1FF;
+}
+
+#wrap section:nth-child(3) {
+    background-color: #38BCA7;
+}
+
+#wrap section:nth-child(4) {
+    background-color: #FFFC85;
+}
+
+#wrap section:nth-child(5) {
+    background-color: #98B2D9;
+}
+
+#wrap section:nth-child(6) {
+    background-color: #143464;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* section 세부설정 */
+
+
+.text p {
+    font-size: 2.8vw;
+    color: #FF5BA8;
+
+}
+
+
+
+/* 1. landing 설정 */
+.landing {
+    position: relative;
+
+}
+
+
+.landing .text {
+    position: absolute;
+    left: -19vw;
+    /* bottom: 28.2vh; 놋북사이즈 */
+    bottom: 27vh;
+    transform: rotate(-90deg);
+    letter-spacing: 0.3vw;
+
+
+}
+
+
+.landing .landing_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+
+.landing_inner .bg_vid {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: -38.9%;
+    top: -20%;
+    transform: rotate(-90deg);
+    background-color: #111;
+}
+
+.bg_vid video {
+    width: auto;
+    height: 100%;
+}
+
+/* slide 공통 설정 */
+
+
+
+.landing .slide {
+    width: 72vw;
+    height: 46vw;
+    position: absolute;
+    bottom: 0;
+    right: -75vw;
+
+    transform: skewX(-50deg);
+    transition: all 0.5s;
+    z-index: 10;
+
+    background-image: url(img/holl.jpg);
+    background-size: cover;
+    background-position: left bottom;
+
+    transition: all 0.8s;
+}
+
+.landing .slide.on {
+    right: -48vw;
+    z-index: 30;
+}
+
+.vid {
+    width: 16vw;
+    height: 22vw;
+    overflow: hidden;
+    position: absolute;
+    left: 18vw;
+    bottom: 2.2vw;
+    transform: skewX(50deg);
+    border-radius: 1vw;
+    background-color: #111;
+    cursor: pointer;
+}
+
+.landing .vid video {
+    width: 100%;
+    height: auto;
+    transform: translateY(-2vh);
+}
+
+
+.slide span {
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    left: 6vw;
+    bottom: 2vw;
+    transform: skewX(50deg);
+    /* background-color: red; */
+    display: none;
+}
+
+.slide span.on {
+    display: block;
+}
+
+.slide span i {
+    font-size: 4.5vw;
+    left: 0px;
+    top: 0px;
+}
+
+.slide .btn {
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    left: 6vw;
+    bottom: 2vw;
+    transform: skewX(50deg);
+}
+
+.slide .btn.on {
+    display: none;
+}
+
+
+
+.btn svg {
+    position: absolute;
+
+}
+
+
+.btn svg:nth-child(1) {
+    font-size: 3.5vw;
+    left: 10px;
+    top: 10px;
+    animation: ani linear 1s 0s infinite;
+}
+
+.btn svg:nth-child(2) {
+    font-size: 4.5vw;
+    left: 10px;
+    top: 10px;
+    animation: ani linear 1s 2s infinite;
+}
+
+
+
+
+
+
+/* 하트 btn 움직이게 하기 */
+@keyframes ani {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+/* 2. is 설정 */
+.is {
+    position: relative;
+
+
+}
+
+
+.is .text {
+    position: absolute;
+    left: -15.8vw;
+    /* bottom: 21.6vh; 놋북사이즈*/
+    bottom: 21vh;
+    transform: rotate(-90deg);
+    letter-spacing: 0.3vw;
+    color: #FF5BA8;
+}
+
+.is .is_inner {
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+
+
+}
+
+.is_inner .is_text {
+    width: 30vw;
+    height: 34vw;
+
+    margin-right: 0.5%;
+    margin-top: 5vw;
+    position: relative;
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: end;
+    color: #fff;
+
+
+}
+
+
+
+
+.is_text p {}
+
+.is_text>p:nth-child(1) {
+    font-family: 'Anton', sans-serif;
+    font-size: 6.6vw;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -13vw;
+    bottom: 12vw;
+    width: 34vw;
+
+    text-align: center;
+
+
+}
+
+
+
+.is_text>div {
+    width: 22vw;
+    height: 32vw;
+
+    position: absolute;
+    top: 1vw;
+    left: 0;
+}
+
+
+.who p:nth-child(1) {
+    font-size: 4vw;
+    animation: cate 2s infinite;
+
+}
+
+.who strong {
+    opacity: 0.35;
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 0.9;
+    animation: aniw 8s 1;
+}
+
+.who em {
+    font-style: normal;
+    font-size: 3vw;
+    line-height: 0.9;
+    animation: aniw 7s infinite;
+}
+
+.who p:nth-child(4) {
+    font-size: 0.6vw;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    line-height: 1.8;
+    margin-top: 1.5vw;
+    letter-spacing: 0.3vw;
+
+}
+
+.who p:nth-child(5) {
+    font-size: 3vw;
+    margin-top: 1.5vw;
+    letter-spacing: 0.2vw;
+    opacity: 0.3;
+    animation: aniw 5s 1;
+
+}
+
+.who p:nth-child(6) {
+    font-size: 3.5vw;
+    letter-spacing: 0.2vw;
+    margin-right: 2vw;
+    margin-top: -2vw;
+    opacity: 0.3;
+    animation: aniw 7s 1;
+}
+
+
+.who p:nth-child(7) {
+    font-size: 4.5vw;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.01vw;
+    margin-top: -1.4vw;
+    color: #C6B1FF;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    animation: cate 1s linear infinite;
+}
+
+
+
+.who p:nth-child(8) {
+    width: 8vw;
+    height: 3.6vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 1vw;
+    background-color: #111;
+    animation: aniw 8s infinite;
+}
+
+
+
+.is_text img {
+    width: 100%;
+    height: 100%;
+}
+
+.is_inner .is_img {
+    width: 40%;
+    height: 800px;
+    width: 30vw;
+    height: 39vw;
+
+    margin-left: 0.5%;
+    margin-top: 70px;
+}
+
+.is_img img {
+    width: auto;
+    height: 100%;
+}
+
+
+/* who 텍스트 애니메이션 */
+
+@keyframes aniw {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* is - slide 설정 */
+
+.is .slide {
+    width: 72vw;
+    height: 46vw;
+    position: absolute;
+    bottom: 0;
+    right: -75vw;
+
+
+    transform: skewX(-50deg);
+    transition: all 0.5s;
+    z-index: 10;
+
+    background-image: url(img/holl.jpg);
+    background-size: cover;
+    background-position: left bottom;
+
+    transition: all 0.5s;
+}
+
+.is .vid video {
+    width: 100%;
+    height: auto;
+    transform: translateY(-2vh);
+}
+
+/* 라잇 */
+
+.is .slide.on {
+    right: -48vw;
+    z-index: 30;
+}
+
+
+
+
+
+
+
+/* 3. new 설정 */
+.new {
+    position: relative;
+
+}
+
+
+.new .text {
+    position: absolute;
+    left: -15.6vw;
+    /* bottom: 21vh; 놋북사이즈 */
+    bottom: 20.4vh;
+    transform: rotate(-90deg);
+    letter-spacing: 0.3vw;
+    color: #FF5BA8;
+}
+
+.new .new_inner {}
+
+
+/* new img01 설정 */
+.new_inner .new_img01 {
+    width: 20.5vw;
+    height: 27.5vw;
+    position: relative;
+    left: 3vw;
+    top: 2.5vw;
+    z-index: 3;
+}
+
+.new_img01 p {}
+
+.new_img01 p:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    background-color: #FFBBE6;
+    border: #fff solid 0.3vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.new_img01 p:nth-child(2) {
+    width: 80%;
+    height: 85%;
+    background-color: aqua;
+    position: absolute;
+    top: 7.5%;
+    left: 10%;
+    overflow: hidden;
+
+}
+
+.new_img01 p:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-20px);
+}
+
+.new_img01 p:nth-child(3) {
+    width: 11vw;
+    height: 3.5vw;
+    background-image: url(img/holl_2.png);
+    background-size: cover;
+    position: absolute;
+    right: -4.6vw;
+    bottom: -0.8vw;
+    transform: rotate(-40deg);
+}
+
+
+/* new img02설정 */
+.new_inner .new_img02 {
+    height: 310px;
+    width: 12vw;
+    height: 16vw;
+
+    position: absolute;
+    left: 25vw;
+    top: 7vw;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.new_img02 span {
+    width: 100%;
+    height: 3.5vw;
+    display: block;
+    letter-spacing: 0.2vw;
+    line-height: 2.4;
+    font-size: 0.78vw;
+    color: #fff;
+}
+
+.new_img02 p {
+    width: 100%;
+    height: 230px;
+    margin-top: 0.5vw;
+
+}
+
+.new_img02 p img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* new img03 설정 */
+.new_inner .new_img03 {
+    width: 30vw;
+    height: 23.5vw;
+
+    position: absolute;
+    right: 4vw;
+    top: 2.5vw;
+
+}
+
+.new_img03 p {
+    width: 100%;
+    height: 3.2vw;
+    display: flex;
+}
+
+
+
+
+.new_img03 p>span:nth-child(1) {
+    width: 50%;
+    height: 100%;
+    font-size: 0.7vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 2.4;
+    color: #fff;
+}
+
+.new_img03 p>span:nth-child(2) {
+    width: 50%;
+    height: 70%;
+    margin-left: 0.5vw;
+    margin-top: 0.75vw;
+}
+
+.new_img03 p>span:nth-child(2):hover {animation: cate 1s linear infinite;}
+
+.new_img03 p>span>a {
+    display: block;
+    font-size: 1.2vw;
+    font-family: 'Black Han Sans', sans-serif;
+    padding: 0.3vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    color: #fff;
+}
+
+.new_img03 p>span>a>em {
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #FFBBE6;
+    margin-left: 0.5vw;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    font-style: normal;
+    line-height: 1.4;
+
+}
+
+.new_img03 div {
+    margin-top: 0.5vw;
+    width: 100%;
+    height: 20vw;
+    background-color: #FFBBE6;
+    border: #fff solid 0.3vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+.new_img03 div>p {
+    width: 90%;
+    height: 85%;
+    position: absolute;
+    top: 7.5%;
+    left: 5%;
+    background-color: #FF5BA8;
+    overflow: hidden;
+}
+
+.new_img03 div>p img {
+    width: 100%;
+    height: 110%;
+}
+
+
+
+/* new_slide 설정 - 자동으로 돌아가다가 마우스 호버시 멈추기 animate */
+
+
+.new .new_slide {
+    width: 52vw;
+    height: 7.3vw;
+    position: absolute;
+    /* right: 6vw; */
+    left: 23vw;
+    bottom: 8vw;
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+.new_slide .newBox {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.newBox ul {
+    display: flex;
+    height: 100%;
+    width: 52vw;
+    position: absolute;
+    left: 0;
+
+}
+
+.newBox ul>li {
+
+    width: 12.5vw;
+    height: 100%;
+    margin-right: 0.5vw;
+    background-color: #FF5BA8;
+
+}
+
+
+.newBox ul:nth-child(1) {
+    left: 0%;
+    animation: ani1 100s linear infinite;
+
+}
+
+.newBox ul:nth-child(2) {
+    left: 52vw;
+    animation: ani2 100s linear infinite;
+}
+
+.newBox:hover ul:nth-child(1) {
+    animation-play-state: paused;
+}
+
+.newBox:hover ul:nth-child(2) {
+    animation-play-state: paused;
+}
+
+@keyframes ani1 {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: -52vw;
+    }
+
+    50.00001% {
+        left: 52vw;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes ani2 {
+    0% {
+        left: 52vw;
+    }
+
+    50% {
+        left: 0;
+    }
+
+    100% {
+        left: -52vw;
+    }
+}
+
+/* li 에 백그라운드 이미지 넣기 */
+
+.newBox ul li {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.newBox ul:nth-child(1) li:nth-child(1) {
+    background-image: url(img/3_new/3-1.jpg);
+}
+
+.newBox ul:nth-child(1) li:nth-child(2) {
+    background-image: url(img/3_new/3-2.jpg);
+}
+
+.newBox ul:nth-child(1) li:nth-child(3) {
+    background-image: url(img/3_new/3-3.jpg);
+}
+
+.newBox ul:nth-child(1) li:nth-child(4) {
+    background-image: url(img/3_new/3-4.jpg);
+}
+
+.newBox ul:nth-child(2) li:nth-child(1) {
+    background-image: url(img/3_new/3-5.jpg);
+}
+
+.newBox ul:nth-child(2) li:nth-child(2) {
+    background-image: url(img/3_new/3-6.jpg);
+}
+
+.newBox ul:nth-child(2) li:nth-child(3) {
+    background-image: url(img/3_new/3-7.jpg);
+}
+
+.newBox ul:nth-child(2) li:nth-child(4) {
+    background-image: url(img/3_new/3-8.jpg);
+}
+
+
+
+
+
+.newBox ul>li>a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* 호버했을 때, 각 li 의 span 에 on 값 생기기 */
+.newBox span {
+    display: block;
+
+    font-size: 0.8vw;
+    text-align: center;
+    line-height: 7.4;
+    opacity: 0;
+    transition: all 0.8s;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: rgba(40, 194, 122, 0.5);
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.8vw;
+    left: 3vw;
+
+    color: #fff;
+
+
+}
+
+.newBox span.on {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* new - 배경 글씨 설정 */
+
+.new_txt {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    color: #fff;
+}
+
+.new_txt>p:nth-child(1) {
+    font-size: 2.6vw;
+    letter-spacing: 0.3vw;
+    margin-bottom: -0.8vw;
+    opacity: 0.6;
+}
+
+.new_txt>p:nth-child(2) {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 5vw;
+    margin-left: -0.3vw;
+    margin-top: 1.5vw;
+    letter-spacing: 0.4vw;
+    opacity: 0.8;
+}
+
+
+/* new - slide 설정 */
+
+.new .slide {
+    width: 72vw;
+    height: 46vw;
+    position: absolute;
+    bottom: 0;
+    right: -75vw;
+
+
+    transform: skewX(-50deg);
+    transition: all 0.5s;
+    z-index: 10;
+
+    background-image: url(img/holl.jpg);
+    background-size: cover;
+    background-position: left bottom;
+
+    transition: all 0.5s;
+}
+
+.new .vid video {
+    width: 100%;
+    height: auto;
+}
+
+.new .slide.on {
+    right: -48vw;
+    z-index: 30;
+}
+
+
+
+
+
+
+
+
+
+/* 4. best 설정 */
+.best {
+    position: relative;
+
+
+}
+
+
+.best .text {
+    position: absolute;
+    left: -15.3vw;
+    /* bottom: 20.5vh; 놋북사이즈 */
+    bottom: 19.8vh;
+    transform: rotate(-90deg);
+    letter-spacing: 0.3vw;
+    color: #FF5BA8;
+}
+
+
+.best .best_inner {}
+
+
+
+/* best title 설정 */
+
+.best_inner .best_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3vw;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vh;
+
+}
+
+.best_title p {
+    font-size: 1vw;
+    font-family: 'Black Han Sans', sans-serif;
+    /* background-color: yellow; */
+    padding: 0 0.5vw;
+    cursor: pointer;
+    color: #FFC881;
+}
+
+.best_title p.on {
+    font-size: 1.4vw;
+    color: #FF9900;
+    border-bottom: 0.2vw solid #FF9900;
+}
+
+/* 타이틀 클릭하면 클릭한 타이틀 on 값과 함께 가운데로 이동 */
+
+
+/* best 가운데 이미지 설정 */
+.best_inner .best_con {
+    width: 40vw;
+    height: 21vw;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+/* best_con 틀 설정 */
+.best_con>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 0.5vw;
+    display: none;
+
+
+}
+
+.best_con>div.on {
+    display: block;
+}
+
+
+
+.bigImg {
+    width: 79%;
+    height: 20vw;
+    background-color: #fff;
+    position: relative;
+}
+
+.bigImg .buy {}
+
+.bigImg .buy a {}
+
+.bigImg .img {}
+
+.bigImg p {
+    position: absolute;
+    /* 사진 한 곳에 모아놓는 방법 */
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.bigImg p img {
+    width: 100%;
+    height: 100%;
+}
+
+.bigImg p.on {
+    display: block;
+}
+
+
+.bigImg span {
+    display: none;
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -7.5vw;
+    margin-left: -7.5vw;
+    background-color: #ffc88198;
+    transition: all 0.8s;
+    border-radius: 50%;
+    font-family: 'Black Han Sans', sans-serif;
+    cursor: pointer;
+
+}
+
+.bigImg span a {
+    font-size: 1.4vw;
+    margin-top: 6vw;
+    text-align: center;
+    display: block;
+    /* color: rgb(160, 51, 0); */
+    color: #FF9900;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.bigImg:hover span {
+    display: block;
+}
+
+
+
+
+/* best 썸네일 설정 */
+
+.con .thumnail {}
+
+.thumnail ul {
+    width: 20%;
+    height: 20vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.thumnail ul li {
+    cursor: pointer;
+    width: 100%;
+    height: 4.625vw;
+    overflow: hidden;
+    background-color: rgb(212, 0, 255);
+
+}
+
+.thumnail ul li:hover {
+    opacity: 0.5;
+}
+
+.thumnail ul li.on {
+    opacity: 0.5;
+}
+
+.thumnail ul li:nth-child(1) {
+    margin-bottom: 0.5vw;
+}
+
+.thumnail ul li:nth-child(2) {
+    margin-bottom: 0.5vw;
+}
+
+.thumnail ul li:nth-child(3) {
+    margin-bottom: 0.5vw;
+}
+
+
+.thumnail ul li img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* best 툰 설정 */
+
+.best_inner .best_toon {
+    width: 70vw;
+    padding: 1vw 0;
+    padding-left: 1vw;
+    height: 13vw;
+    background-color: #FFC881;
+    margin-top: 4vh;
+    position: relative;
+    left: 50%;
+    margin-left: -35vw;
+    cursor: pointer;
+}
+
+.best_toon>div {
+    height: 13vw;
+    width: 70vw;
+
+    background-color: #FF5BA8;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+
+}
+
+.best_toon>div.on {
+    display: block;
+}
+
+
+button {
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+
+.trailer01,
+.trailer02,
+.trailer03 {
+    display: flex;
+    /* width: 2340px; */
+    height: 12vw;
+    background-color: #fff;
+
+}
+
+.trailer01 ul,
+.trailer02 ul,
+.trailer03 ul {
+    display: flex;
+    position: absolute;
+    background-color: #FFC881;
+    transition: all 1.2s;
+}
+
+.trailer01 ul li,
+.trailer02 ul li,
+.trailer03 ul li {
+
+    width: 13vw;
+    height: 13vw;
+    margin-right: 1vw;
+    background-color: aqua;
+
+}
+
+
+
+.trailer01 ul li img,
+.trailer02 ul li img,
+.trailer03 ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* .best - slide 설정 */
+
+.best .slide {
+    width: 72vw;
+    height: 46vw;
+    position: absolute;
+    bottom: 0;
+    right: -75vw;
+
+
+    transform: skewX(-50deg);
+    transition: all 0.5s;
+    z-index: 10;
+
+    background-image: url(img/holl.jpg);
+    background-size: cover;
+    background-position: left bottom;
+
+    transition: all 0.5s;
+}
+
+.best .vid video {
+    width: 100%;
+    height: auto;
+    transform: translateY(-1vh);
+}
+
+.best .slide.on {
+    right: -48vw;
+    z-index: 30;
+}
+
+
+
+
+
+
+
+
+
+/* 5. event 설정 */
+.event {
+    position: relative;
+
+}
+
+
+.event .text {
+    position: absolute;
+    left: -19.4vw;
+    /* bottom: 29vh; 놋북사이즈 */
+    bottom: 28vh;
+    transform: rotate(-90deg);
+    letter-spacing: 0.3vw;
+    color: #FF5BA8;
+}
+
+.event .event_inner {}
+
+.event_inner .title {
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+
+}
+
+.event_inner .title p:nth-child(1) {
+    font-size: 3.5vw;
+    font-family: 'Black Han Sans', sans-serif;
+    padding-top: 3vh;
+    letter-spacing: 0.4vw;
+}
+
+.event_inner .title p:nth-child(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8vw;
+    letter-spacing: 0.2vw;
+    line-height: 2;
+}
+
+
+
+.event_inner .img01 {
+    width: 32vw;
+    height: 30vw;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    position: relative;
+}
+
+
+
+.event_inner .img01 p {
+    position: absolute;
+}
+
+.event_inner .img01 p:nth-child(1) {
+    width: 60%;
+    height: 23.5vw;
+    background-color: yellow;
+    left: 0;
+    top: 0;
+    background-image: url(img/5_event/5-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.event_inner .img01 p:nth-child(2) {
+    width: 15vw;
+    height: 19vw;
+    background-color: #4F75AE;
+    opacity: 0.4;
+    right: 2vw;
+    bottom: -1vh;
+}
+
+
+.event_inner .img01 p:nth-child(3) {
+    width: 15vw;
+
+    height: 19.5vw;
+    right: 1vw;
+
+    bottom: 1.5vh;
+    background-image: url(img/5_event/5-2.jpg);
+    background-size: cover;
+
+    background-position: center top;
+}
+
+
+.event_inner .bgtxt {
+    position: absolute;
+    left: 20vw;
+    top: 24vh;
+    letter-spacing: 0.3vw;
+    color: #4F75AE;
+
+}
+
+.event_inner .bgtxt p:nth-child(1) {
+    font-size: 2.5vw;
+    opacity: 0.5;
+}
+
+.event_inner .bgtxt p:nth-child(2) {
+    font-size: 3.5vw;
+    letter-spacing: 1.2vw;
+    opacity: 0.8;
+}
+
+
+
+.event_inner .img02 {
+    width: 22vw;
+    height: 17.5vw;
+
+    position: absolute;
+    bottom: 7vh;
+    right: 22vw;
+}
+
+.event_inner .img02 .txt {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.img02 .txt span {
+    display: block;
+    color: #fff;
+}
+
+.img02 .txt span:nth-child(1) {
+    font-size: 1.2vw;
+    font-family: 'Black Han Sans', sans-serif;
+    margin-bottom: 1vh;
+}
+
+.img02 .txt span:nth-child(2) {
+    font-size: 0.68vw;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.img02 .pabuy {
+    display: flex;
+    width: 22vw;
+    height: 11.5vw;
+    background-color: #fff;
+
+}
+
+.pabuy p {
+    width: 10.25vw;
+    height: 10.5vw;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+    position: relative;
+}
+
+.pabuy p:nth-child(1) {
+    background-color: #111;
+    margin-left: 0.5vw;
+}
+
+.pabuy p:nth-child(2) {
+    background-color: #aaa;
+}
+
+.pabuy a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.pabuy a img {
+    width: 100%;
+    height: 100%;
+}
+
+.pabuy span {
+    display: block;
+    width: 10vw;
+    height: 10vw;
+    margin-top: -5vw;
+    margin-left: -5vw;
+    background-color: rgba(63, 70, 170, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.pabuy span:hover {
+    opacity: 1;
+}
+
+
+.pabuy em {
+    font-style: normal;
+    display: block;
+    margin-top: 30%;
+    font-size: 0.8vw;
+
+}
+
+.pabuy em strong {
+    display: block;
+    background-color: #2D3C78;
+    width: 5vw;
+    height: 1.5vw;
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.25vw;
+    margin-top: 1vh;
+    font-size: 0.8vw;
+    font-weight: normal;
+
+}
+
+
+.event_inner .img03 {
+    position: absolute;
+    right: 2vw;
+    top: 20vh;
+    width: 21vw;
+    height: 18vw;
+}
+
+.event_inner .img03 p {
+    width: 100%;
+    height: 15vw;
+    background-color: #fff;
+
+
+}
+
+.event_inner .img03 p img {
+    width: auto;
+    height: 100%;
+}
+
+.event_inner .img03 a {
+    width: 10vw;
+    height: 50px;
+    height: 2.5vw;
+    background-color: #2D3C78;
+    color: #fff;
+    display: block;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.2vw;
+    margin-top: 1vh;
+    text-align: center;
+    line-height: 2.2;
+    border-radius: 0.25vw;
+    margin-left: 6vw;
+}
+
+
+
+
+
+
+
+
+/* .event - slide 설정 */
+
+.event .slide {
+    width: 72vw;
+    height: 46vw;
+    position: absolute;
+    bottom: 0;
+    right: -75vw;
+
+
+    transform: skewX(-50deg);
+    transition: all 0.5s;
+    z-index: 10;
+
+    background-image: url(img/holl.jpg);
+    background-size: cover;
+    background-position: left bottom;
+
+    transition: all 0.5s;
+}
+
+.event .vid video {
+    width: 100%;
+    height: auto;
+    transform: translateY(-1vh);
+}
+
+.event .slide.on {
+    right: -48vw;
+    z-index: 30;
+}
+
+
+
+
+
+
+/* 6. categoryS 설정 */
+.category {
+    position: relative;
+}
+
+
+.category .text {
+    position: absolute;
+    left: -15.7vw;
+    /* bottom: 21.5vh; 놋북사이즈 */
+    bottom: 20.6vh;
+    transform: rotate(-90deg);
+    letter-spacing: 0.3vw;
+    color: #FF5BA8;
+}
+
+.category .category_inner {}
+
+.category_inner .go {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.category_inner .go a {
+    display: block;
+    font-size: 1.2vw;
+    font-family: 'Black Han Sans', sans-serif;
+    margin-right: 2.5vw;
+    margin-top: 2vh;
+    padding: 0.75vw 0.25vw;
+    color: #fff;
+}
+
+.category_inner .go a em {
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #FFBBE6;
+    margin-left: 0.5vw;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    font-style: normal;
+    line-height: 1.4;
+
+}
+
+.category_inner .cate_title {
+    width: 24vw;
+    height: 18vw;
+    text-align: center;
+    margin-left: 2.5vw;
+    margin-top: 8vh;
+
+}
+
+.cate_title p {
+    width: 12vw;
+    height: 9vw;
+    float: left;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    transition: all 0.5s;
+
+}
+
+.cate_title p:hover {
+    border: 5px solid #FFBBE6;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #fff;
+    background-color: #98b2d99e;
+}
+
+.cate_title p.on {
+    background-color: #FFBBE6;
+    color: #2D3C78;
+}
+
+.cate_title p strong {
+    display: block;
+    font-size: 1vw;
+    margin-top: 4vh;
+}
+
+.cate_title p em {
+    display: block;
+    font-style: normal;
+    font-size: 0.7vw;
+    margin-top: 2vh;
+}
+
+
+.category_inner .cateNum {
+    position: absolute;
+    left: 29vw;
+    top: 24vh;
+    color: #fff;
+}
+
+.category_inner .cateNum p {
+    font-size: 0.9vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 2vh;
+    width: 1.5vw;
+    height: 1.5vw;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.category_inner .cateNum p:hover {
+    background-color: #98b2d99e;
+    border-radius: 50%;
+}
+
+.category_inner .cateNum p.on {
+    background-color: #FFBBE6;
+    border-radius: 50%;
+}
+
+.category_inner .cate_big {
+    width: 43vw;
+    height: 27vw;
+    background-color: #fff;
+    position: absolute;
+    right: 2.5vw;
+    top: 8vh;
+    cursor: pointer;
+}
+
+.category_inner .cate_big:hover {
+    animation: cate 1s linear infinite;
+    opacity: 0.8;
+}
+
+
+.category_inner .cate_big p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    transition: all 0.5s;
+}
+
+
+
+.category_inner .cate_big p.on {
+    display: block;
+}
+
+.category_inner .cate_big p img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-2vh);
+}
+
+
+
+
+
+
+
+
+/* category 트레일러 설정 */
+.category_inner .cate_trailer {
+    position: relative;
+    left: 2.5vw;
+    bottom: -8vh;
+    height: 12vw;
+
+    width: 55vw;
+
+}
+
+
+/* .cate_trailer버튼 설정 */
+
+
+.cate_trailer .right i {
+    right: 0.5vw;
+    top: 5vh;
+}
+
+.cate_trailer .left i {
+    right: 0.5vw;
+    top: 10vh;
+}
+
+.cate_trailer i {
+    color: rgb(175, 175, 175);
+    position: absolute;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+
+
+
+
+.cate_trailer i.on {
+    color: #fff;
+}
+
+
+
+/* .category con 설정  */
+
+
+.cate_trailer>div {
+    display: none;
+
+}
+
+.cate_trailer>div.on {
+    display: block;
+
+}
+
+.cate_trailer .cateBox {
+    width: 52vw;
+    height: 12vw;
+    overflow: hidden;
+    transition: all 0.8s;
+    position: relative;
+}
+
+.cate_trailer ul {
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 104vw;
+    height: 12vw;
+    transition: all 2s;
+
+
+}
+
+
+
+.cate_trailer ul li {
+    width: 12.5vw;
+    height: 12vw;
+
+    margin-right: 0.5vw;
+}
+
+
+.cate_trailer ul li:hover {
+    background-color: #98b2d99e;
+}
+
+.cate_trailer ul li:hover img {
+    opacity: 0.5;
+}
+
+.cate_trailer ul li:hover em {
+    color: #14396f;
+    font-weight: bold;
+}
+
+.cate_trailer ul li:hover strong {
+    color: #14396f;
+    font-weight: bold;
+}
+
+
+.cate_trailer ul li a {
+    display: block;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 0.1vw;
+    color: #fff;
+
+}
+
+
+
+.cate_trailer ul li a span {
+    width: 100%;
+    height: 8vw;
+    background-color: #fff;
+    display: block;
+    overflow: hidden;
+}
+
+.cate_trailer ul li a span img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+.cate_trailer ul li a strong {
+    display: block;
+    font-size: 0.7vw;
+    font-weight: normal;
+    margin-top: 2vh;
+
+}
+
+.cate_trailer ul li a em {
+    display: block;
+    font-style: normal;
+    margin-top: 1vh;
+    font-size: 0.7vw;
+
+
+}
+
+
+
+
+
+
+
+/* .category - slide 설정 */
+
+.category .slide {
+    width: 72vw;
+    height: 46vw;
+    position: absolute;
+    bottom: 0;
+    right: -75vw;
+
+
+    transform: skewX(-50deg);
+    transition: all 0.5s;
+    z-index: 10;
+
+    background-image: url(img/holl.jpg);
+    background-size: cover;
+    background-position: left bottom;
+
+    transition: all 0.5s;
+}
+
+.category .vid video {
+    width: 100%;
+    height: auto;
+
+}
+
+.category .slide.on {
+    right: -48vw;
+    z-index: 30;
+}
+
+
+/* 푸터설정 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    width: 20%;
+    height: 10%;
+    color: #fff;
+    background-color: #FF5BA8;
+    z-index: 20;
+}
+
+.footer i {
+    margin-top: 3vh;
+    font-size: 2vw;
+    margin-left: 2vw;
+    opacity: 0.5;
+}
+
+.footer p {
+    margin-top: 3vh;
+    margin-left: 2vw;
+    font-size: 0.7vw;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+@keyframes cate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

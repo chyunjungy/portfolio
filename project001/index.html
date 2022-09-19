@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>춘식</title>
+    <!-- 외부스타일시트 연결 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 제이쿼리 CDM -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- 폰트어썸 CDM -->
+    <script src="https://kit.fontawesome.com/85ac904405.js" crossorigin="anonymous"></script>
+    <!-- 외부스크립트 연결 -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <script src="js/js.js"></script>
+
+    <!-- 아이콘/파비콘 설정 (파비콘 사이즈 196x196)-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- 웹앱 전체화면설정 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+
+    <div class="bg">
+
+        <div class="bg_inner">
+            <div class="icon">
+                <a href="https://store.kakaofriends.com/home" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 191.94" fill="#FF5BA8">
+                        <g>
+                            <polygon class="cls-1" points="76.01 89.49 87.99 89.49 87.99 89.49 82 72.47 76.01 89.49" />
+                            <path class="cls-1"
+                                d="M104,0C46.56,0,0,36.71,0,82c0,29.28,19.47,55,48.75,69.48-1.59,5.49-10.24,35.34-10.58,37.69,0,0-.21,1.76.93,2.43a3.14,3.14,0,0,0,2.48.15c3.28-.46,38-24.81,44-29A131.56,131.56,0,0,0,104,164c57.44,0,104-36.71,104-82S161.44,0,104,0ZM52.53,69.27c-.13,11.6.1,23.8-.09,35.22-.06,3.65-2.16,4.74-5,5.78a1.88,1.88,0,0,1-1,.07c-3.25-.64-5.84-1.8-5.92-5.84-.23-11.41.07-23.63-.09-35.23-2.75-.11-6.67.11-9.22,0-3.54-.23-6-2.48-5.85-5.83s1.94-5.76,5.91-5.82c9.38-.14,21-.14,30.38,0,4,.06,5.78,2.48,5.9,5.82s-2.3,5.6-5.83,5.83C59.2,69.38,55.29,69.16,52.53,69.27Zm50.4,40.45a9.24,9.24,0,0,1-3.82.83c-2.5,0-4.41-1-5-2.65l-3-7.78H72.85l-3,7.78c-.58,1.63-2.49,2.65-5,2.65a9.16,9.16,0,0,1-3.81-.83c-1.66-.76-3.25-2.86-1.43-8.52L74,63.42a9,9,0,0,1,8-5.92,9.07,9.07,0,0,1,8,5.93l14.34,37.76C106.17,106.86,104.58,109,102.93,109.72Zm30.32,0H114a5.64,5.64,0,0,1-5.75-5.5V63.5a6.13,6.13,0,0,1,12.25,0V98.75h12.75a5.51,5.51,0,1,1,0,11Zm47-4.52A6,6,0,0,1,169.49,108L155.42,89.37l-2.08,2.08v13.09a6,6,0,0,1-12,0v-41a6,6,0,0,1,12,0V76.4l16.74-16.74a4.64,4.64,0,0,1,3.33-1.34,6.08,6.08,0,0,1,5.9,5.58A4.7,4.7,0,0,1,178,67.55L164.3,81.22l14.77,19.57A6,6,0,0,1,180.22,105.23Z"
+                                fill="#FF5BA8" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Shopping Basket</title>
+                        <desc>A line styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer1" fill="#FF5BA8" stroke="#FF5BA8" stroke-miterlimit="10" stroke-width="3"
+                            d="M6.1 27L12 57h40l6-30" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer2" fill="#FF5BA8" stroke="#FF5BA8" stroke-miterlimit="10" stroke-width="4"
+                            stroke-width="2" d="M26 7L8.1 27M38 7l18 20" stroke-linejoin="round" stroke-linecap="round">
+                        </path>
+                        <path data-name="layer1" fill="#FF5BA8" stroke="#FF5BA8" stroke-miterlimit="10" stroke-width="4"
+                            d="M2 27h60" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                </a>
+                <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+            </div>
+
+
+        </div>
+
+       
+    </div>
+
+    
+    <div class="bgBox"></div>
+    <div class="footer">
+        <i class="fa fa-globe" aria-hidden="true"></i>
+        <p>Copyright &copy; 2022 Choihyunjung<br>
+            All Rights Reserved</p>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <h1>로고</h1>
+        </div>
+        <div class="navBar">
+            <ul>
+                <li class="on"><a href="#"><span>KAKAO CHUN</span></a></li>
+                <li><a href="#">춘식's</a></li>
+                <li><a href="#">NEW</a></li>
+                <li><a href="#">BEST</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">CATEGORY</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div id="wrap">
+
+        <section class="landing">
+            <article class="text">
+                <p>CHUN SIK'S</p>
+                <p>kakaofriends Shop</p>
+            </article>
+            <article class="landing_inner">
+                <div class="bg_vid">
+                    <video loop autoplay muted>
+                        <source src="img/1_landing/1_bg.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </article>
+            <div class="slide">
+                <div class="vid">
+                    <video controls>
+                        <!--autoplay muted loop -->
+                        <source src="img/1_landing/1_vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            stroke="#FF5BA8" fill="none" stroke-width="3" stroke-miterlimit="10"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </span>
+                <div class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="is">
+            <article class="text">
+                <p>CHUN SIK'S</p>
+                <p>Who Are You ?</p>
+            </article>
+
+            <article class="is_inner">
+                <div class="is_text">
+                    <p>I 'm CHUN SIK</p>
+                    <div class="who">
+                        <p>안냥.</p>
+                        <strong>나는 라이언과<br> 동거중인 </strong><em>춘식이냥</em>
+                        <p>내 울음소리는 냔냔~ <br>
+                            내 취미는 로봇청소기타고 집투어하기야 <br>
+                            요즘에는 라이언과 춤연습할때가 제일 행복해☆</p>
+                        <p>고구마 너무</p>
+                        <p>좋아</p>
+                        <p>so like !</p>
+                        <p><img src="img/2_chunIs/2_sweet.png" alt=""></p>
+                    </div>
+                </div>
+                <div class="is_img"><img src="img/2_chunIs/2_chyun is.png" alt=""></div>
+            </article>
+
+            <div class="slide">
+                <div class="vid">
+                    <video controls>
+                        <source src="img/2_chunIs/2_vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            stroke="#FF5BA8" fill="none" stroke-width="3" stroke-miterlimit="10"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </span>
+                <div class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </div>
+        </section>
+
+        <section class="new">
+            <article class="text">
+                <p>CHUN SIK'S</p>
+                <p>Summer Party</p>
+            </article>
+
+            <article class="new_inner">
+                <div class="new_img01">
+                    <P></P>
+                    <p><img src="img/3_new/3_surf.gif" alt=""></p>
+                    <p></p>
+                </div>
+                <div class="new_img02">
+                    <span>푸른바다, 시원한 계곡<br> 어디든지 함께 떠나 볼까요?</span>
+                    <p><img src="img/3_new/3_surf02.jpg" alt=""></p>
+                </div>
+                <div class="new_img03">
+                    <p>
+                        <span>카카오프렌즈에서 준비한 쿨한 혜택과 함께<br> 이번 여름 휴가를 준비해보세요!</span>
+                        <span>
+                            <a href="https://store.kakaofriends.com/home" target="_blank">더 많은 상품 보러가기 <em>></em></a>
+                        </span>
+                    </p>
+                    <div>
+                        <p><img src="img/3_new/3_surf01.jpg" alt=""></p>
+                    </div>
+                </div>
+
+                <div class="new_slide">
+                    <div class="newBox">
+                        <ul>
+                            <li><a href="#"><span>바로가기</span></a></li>
+                            <li><a href="#"><span>바로가기</span></a></li>
+                            <li><a href="#"><span>바로가기</span></a></li>
+                            <li><a href="#"><span>바로가기</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><span>바로가기</span></a></li>
+                            <li><a href="#"><span>바로가기</span></a></li>
+                            <li><a href="#"><span>바로가기</span></a></li>
+                            <li><a href="#"><span>바로가기</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="new_txt">
+                    <p>SUMMER PARTY</p>
+                    <p>다시 만난 우리의 여름</p>
+                </div>
+            </article>
+
+
+            <div class="slide">
+                <div class="vid">
+                    <video controls>
+                        <source src="img/3_new/3_vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            stroke="#FF5BA8" fill="none" stroke-width="3" stroke-miterlimit="10"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </span>
+                <div class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="best">
+            <article class="text">
+                <p>CHUN SIK'S</p>
+                <p>Hot Best Item</p>
+            </article>
+
+            <article class="best_inner">
+
+                <div class="best_title">
+                    <p class="on">메가페이스 쿠션</p>
+                    <p>무선 무드등 타프 선풍기</p>
+                    <p>자이언트 소파쿠션</p>
+                </div>
+
+                <div class="best_con">
+                    <div class="con01 on">
+                        <div class="bigImg">
+                            <p class="on"><img src="img/4_best/4-1_1.jpg" alt=""></p>
+                            <p><img src="img/4_best/4-1_2.jpg" alt=""></p>
+                            <p><img src="img/4_best/4-1_3.jpg" alt=""></p>
+                            <p><img src="img/4_best/4-1_4.jpg" alt=""></p>
+                            <span><a href="#">메가페이스 쿠션<br>구매하러 가기</a></span>
+                        </div>
+                        <div class="thumnail">
+                            <ul>
+                                <li class="on"><img src="img/4_best/4-1_1.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_2.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_3.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="con02">
+                        <div class="bigImg">
+                            <p class="on"><img src="img/4_best/4-2_1.jpg" alt=""></p>
+                            <p><img src="img/4_best/4-2_2.jpg" alt=""></p>
+                            <p><img src="img/4_best/4-2_3.jpg" alt=""></p>
+                            <p><img src="img/4_best/4-2_4.jpg" alt=""></p>
+                            <span><a href="#">무선 무드등 타프 선풍기<br>구매하러 가기</a></span>
+                        </div>
+                        <div class="thumnail">
+                            <ul>
+                                <li class="on"><img src="img/4_best/4-2_1.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_2.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_3.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="con03">
+                        <div class="bigImg">
+                            <p class="on"><img src="img/4_best/4-3_1.jpg" alt=""></p>
+                            <p><img src="img/4_best/4-3_2.jpg" alt=""></p>
+                            <p><img src="img/4_best/4-3_3.jpg" alt=""></p>
+                            <p><img src="img/4_best/4-3_4.jpg" alt=""></p>
+                            <span><a href="#">자이언트 소파쿠션<br>구매하러 가기</a></span>
+                        </div>
+                        <div class="thumnail">
+                            <ul>
+                                <li class="on"><img src="img/4_best/4-3_1.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-3_2.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-3_3.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-3_4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="best_toon">
+                    <div class="toon01 on">
+                        <button>버튼</button>
+                        <div class="trailer01">
+                            <ul>
+                                <li><img src="img/4_best/4-1_toon1.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_toon2.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_toon3.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_toon4.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_toon5.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_toon6.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_toon7.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_toon8.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-1_toon9.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toon02">
+
+                        <div class="trailer02">
+                            <ul>
+                                <li><img src="img/4_best/4-2_toon1.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_toon2.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_toon3.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_toon4.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_toon5.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_toon6.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_toon7.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-2_toon8.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toon02">
+
+                        <div class="trailer03">
+                            <ul>
+                                <li><img src="img/4_best/4-3_toon1.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-3_toon2.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-3_toon3.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-3_toon4.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-3_toon5.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-3_toon6.jpg" alt=""></li>
+                                <li><img src="img/4_best/4-3_toon7.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <div class="slide">
+                <div class="vid">
+                    <video controls>
+                        <source src="img/4_best/4_vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            stroke="#FF5BA8" fill="none" stroke-width="3" stroke-miterlimit="10"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </span>
+                <div class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="event">
+            <article class="text">
+                <p>CHUN SIK'S</p>
+                <p>Kakaofriends Event</p>
+            </article>
+            <article class="event_inner">
+                <div class="title">
+                    <p>카카오 프렌즈 컬러링 컨테스트</p>
+                    <p>
+                        <카카오프렌즈 파리에디션> 출시를 맞아 카카오프렌즈가 프랑스 관광청과 함께 아주 특별한 파리 여행 선물을 준비했어요.
+                            <br>즐겁고 낭만적인 파리 여행을 프렌즈와 함께할 단 한명의 주인공이 되어보세요.
+                    </p>
+                </div>
+
+                <div class="img01">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+
+                </div>
+
+                <div class="bgtxt">
+                    <p>KAKAO FRIENDS</p>
+                    <p>PARIS EDITION</p>
+                </div>
+
+                <div class="img02">
+                    <div class="txt">
+                        <span>
+                            카카오프렌즈 <파리 에디션>
+                                <br> 구매 하고 컬러링 카드 2종을 GET!
+                        </span>
+                        <span>
+                            파리에디션 1종 이상 구매 시 1개의 주문 건 당 2종의 컬러링 카드가 증정됩니다
+                        </span>
+                    </div>
+                    <div class="pabuy">
+                        <p>
+                            <a href="#"><img src="img/5_event/5-4.jpg" alt=""></a>
+                            <span>
+                                <em>파리에디션 에펠탑 세트인형<br>32,000원
+                                    <strong>구매하기</strong></em>
+                            </span>
+                        </p>
+                        <p>
+                            <a href="#"><img src="img/5_event/5-5.jpg" alt=""></a>
+                            <span>
+                                <em>파리에디션 필기구세트(2p)<br>8,000원
+                                    <strong>구매하기</strong></em>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="img03">
+                    <p><img src="img/5_event/5-3.jpg" alt=""></p>
+                    <a href="#">참여하기 ></a>
+                </div>
+            </article>
+
+            <div class="slide">
+                <div class="vid">
+                    <video controls>
+                        <source src="img/5_event/5_vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            stroke="#FF5BA8" fill="none" stroke-width="3" stroke-miterlimit="10"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </span>
+                <div class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <article class="text">
+                <p>CHUN SIK'S</p>
+                <p>Category Item</p>
+            </article>
+            <article class="category_inner">
+                <div class="go"><a href="https://store.kakaofriends.com/home" target="_blank">전체 상품 보러가기 <em>></em></a>
+                </div>
+                <div class="cate_title">
+                    <p class="on">
+                        <strong>문구</strong>
+                        <em>사무실 책상 위에 있는<br>춘식이와 함께 월요병 극복</em>
+                    </p>
+                    <p>
+                        <strong>리빙</strong>
+                        <em>보기만해도 힐링되는 <br>아늑한 춘테리어 어때요?</em>
+                    </p>
+                    <p>
+                        <strong>토이</strong>
+                        <em>폭신폭신 말랑말랑<br> 춘식이 한마리 몰고가세요~</em>
+                    </p>
+                    <p>
+                        <strong>쿠킹</strong>
+                        <em>춘식이보고 한입, 두입 <br>눈과 입이 맛있는 춘식템</em>
+                    </p>
+                </div>
+                <div class="cateNum">
+                    <p class="on">01</p>
+                    <p>02</p>
+                    <p>03</p>
+                    <p>04</p>
+                </div>
+                <div class="cate_big">
+                    <P class="on"><img src="img/6_category/6-1.jpg" alt=""></P>
+                    <P><img src="img/6_category/6-2.jpg" alt=""></P>
+                    <P><img src="img/6_category/6-3.jpg" alt=""></P>
+                    <P><img src="img/6_category/6-4.jpg" alt=""></P>
+                </div>
+
+
+
+                <div class="cate_trailer">
+                    <div class="con01 on">
+                        <p class="right"><i class="fa fa-arrow-right on" aria-hidden="true"></i></p>
+                        <p class="left"><i class="fa fa-arrow-left" aria-hidden="true"></i></p>
+                        <div class="cateBox">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-1_1.jpg" alt=""></span>
+                                        <strong>춘식이 노트북 파우치(13인치)</strong>
+                                        <em>35,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-1_2.jpg" alt=""></span>
+                                        <strong>춘식이 페이스 계산기</strong>
+                                        <em>18,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-1_3.jpg" alt=""></span>
+                                        <strong>이불 속 춘식이 마우스패드</strong>
+                                        <em>5,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-1_4.jpg" alt=""></span>
+                                        <strong>10000mAh 춘식이 보조배터리 </strong>
+                                        <em>49,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-1_5.jpg" alt=""></span>
+                                        <strong>춘식이 페이스 수첩</strong>
+                                        <em>4,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-1_6.jpg" alt=""></span>
+                                        <strong>춘식이 형압 파우치</strong>
+                                        <em>26,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-1_7.jpg" alt=""></span>
+                                        <strong>춘식이 데스크휴지통</strong>
+                                        <em>12,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-1_8.jpg" alt=""></span>
+                                        <strong>춘식이 인덱스 노트</strong>
+                                        <em>6,000원</em>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div class="con02">
+                        <p class="right"><i class="fa fa-arrow-right on" aria-hidden="true"></i></p>
+                        <p class="left"><i class="fa fa-arrow-left" aria-hidden="true"></i></p>
+                        <div class="cateBox">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-2_1.jpg" alt=""></span>
+                                        <strong>춘식이 샌드위치 메이커</strong>
+                                        <em>49,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-2_2.jpg" alt=""></span>
+                                        <strong>춘식이 멀티쿠커</strong>
+                                        <em>39,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-2_3.jpg" alt=""></span>
+                                        <strong>춘식이 스낵볼&스푼</strong>
+                                        <em>20,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-2_4.jpg" alt=""></span>
+                                        <strong>미니에어프라이어_라이언&춘식이 </strong>
+                                        <em>49,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-2_5.jpg" alt=""></span>
+                                        <strong>아이스크림 얼음틀_라이언&춘식이</strong>
+                                        <em>16,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-2_6.jpg" alt=""></span>
+                                        <strong>2구 와플메이커_라이언&춘식이 </strong>
+                                        <em>69,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-2_7.jpg" alt=""></span>
+                                        <strong>춘식이 토스트기</strong>
+                                        <em>49,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-2_8.jpg" alt=""></span>
+                                        <strong>춘식이페이스형태 유리컵</strong>
+                                        <em>15,000원</em>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="con03">
+                        <p class="right"><i class="fa fa-arrow-right on" aria-hidden="true"></i></p>
+                        <p class="left"><i class="fa fa-arrow-left" aria-hidden="true"></i></p>
+                        <div class="cateBox">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-3_1.jpg" alt=""></span>
+                                        <strong>틴테이블 스피커_라이언&춘식이 </strong>
+                                        <em>55,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-3_2.jpg" alt=""></span>
+                                        <strong>피규어 탁상거울_라이언&춘식이</strong>
+                                        <em>29,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-3_3.jpg" alt=""></span>
+                                        <strong>라이언과 춘식이의 전자시계</strong>
+                                        <em>49,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-3_4.jpg" alt=""></span>
+                                        <strong>춘식이 수납포겟</strong>
+                                        <em>18,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-3_5.jpg" alt=""></span>
+                                        <strong>캔들워머_라이언&춘식이</strong>
+                                        <em>59,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-3_6.jpg" alt=""></span>
+                                        <strong>걸이형도어스토퍼_엔젤 춘식이</strong>
+                                        <em>15,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-3_7.jpg" alt=""></span>
+                                        <strong>다용도걸이 2P SET_라이언&춘식이</strong>
+                                        <em>10,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-3_8.jpg" alt=""></span>
+                                        <strong>라이언 과 춘식이 디지털시계</strong>
+                                        <em>69,000원</em>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="con04">
+                        <p class="right"><i class="fa fa-arrow-right on" aria-hidden="true"></i></p>
+                        <p class="left"><i class="fa fa-arrow-left" aria-hidden="true"></i></p>
+                        <div class="cateBox">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-4_1.jpg" alt=""></span>
+                                        <strong>춘식이 폭신폭신 페이스 쿠션</strong>
+                                        <em>36,000원 / 15,000원(미니)</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-4_2.jpg" alt=""></span>
+                                        <strong>춘식이는 고구마를 좋아해 인형 </strong>
+                                        <em>35,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-4_3.jpg" alt=""></span>
+                                        <strong>마음을 전해줄고양 춘식이 인형 </strong>
+                                        <em>32,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-4_4.jpg" alt=""></span>
+                                        <strong>춘식이 꿈나라 필로우</strong>
+                                        <em>24,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-4_5.jpg" alt=""></span>
+                                        <strong>내몸에 꼭 맞는 U자 바디필로우</strong>
+                                        <em>59,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-4_6.jpg" alt=""></span>
+                                        <strong>춘식이는 수박을 좋아해 인형</strong>
+                                        <em>24,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-4_7.jpg" alt=""></span>
+                                        <strong>춘식이 볼빵빵 인형</strong>
+                                        <em>28,000원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="img/6_category/6-4_8.jpg" alt=""></span>
+                                        <strong>후디 바디필로우_춘식이</strong>
+                                        <em>35,000원</em>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </article>
+
+            <div class="slide">
+                <div class="vid">
+                    <video controls>
+                        <source src="img/6_category/6_vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            stroke="#FF5BA8" fill="none" stroke-width="3" stroke-miterlimit="10"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </span>
+                <div class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Hearts</title>
+                        <desc>A solid styled icon from Orion Icon Library.</desc>
+                        <path data-name="layer2"
+                            d="M53 27a9.7 9.7 0 0 0-9 5.9 9.7 9.7 0 0 0-9-5.9 8.9 8.9 0 0 0-9 8.7 8.8 8.8 0 0 0 .4 2.7c2 7.7 11.2 15.4 17.6 20.6 6.3-5.2 15.5-13.5 17.5-20.4a8.5 8.5 0 0 0 .3-1.2v-.2A8.9 8.9 0 0 0 62 36a8.9 8.9 0 0 0-9-9z"
+                            fill="#FF5BA8"></path>
+                        <path data-name="layer1"
+                            d="M22 35.9a4.1 4.1 0 0 1 0-.5A12.9 12.9 0 0 1 35 23a14.1 14.1 0 0 1 9 3.3 14.1 14.1 0 0 1 4.3-2.5 20.9 20.9 0 0 0 1.1-2.8 12.3 12.3 0 0 0 .4-1.7v-.2a12.6 12.6 0 0 0 .1-1.7A12.1 12.1 0 0 0 38 5a13 13 0 0 0-12 8.2A13 13 0 0 0 14 5 12.1 12.1 0 0 0 2 16.9v.2a12.5 12.5 0 0 0 .6 3.7C5.3 31.2 17.5 41.8 26 49l1-.9a25.3 25.3 0 0 1-4.4-8.4 12.8 12.8 0 0 1-.6-3.8z"
+                            fill="#FF5BA8"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
