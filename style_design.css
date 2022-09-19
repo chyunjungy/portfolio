@@ -1,0 +1,2937 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bad+Script&family=Barrio&family=Bungee+Shade&family=Gowun+Dodum&family=Libre+Barcode+39+Text&family=Londrina+Shadow&family=Rubik+Bubbles&family=Rubik+Puddles&family=Sarina&display=swap');
+/* font-family: 'Aboreto', cursive;
+font-family: 'Bad Script', cursive;
+font-family: 'Barrio', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Gowun Dodum', sans-serif;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Londrina Shadow', cursive;
+font-family: 'Rubik Bubbles', cursive;
+font-family: 'Rubik Puddles', cursive;
+font-family: 'Sarina', cursive; */
+
+
+/* design 설정 */
+.design {
+    /* background-color: rgb(210, 252, 255); */
+    background-color: #111;
+    width: 100%;
+    position: fixed;
+    transition: all 1s;
+    left: 100%;
+    top: 0;
+    z-index: 1;
+
+}
+
+
+
+
+.design section {
+    transition: all 0.8s;
+
+
+}
+
+
+/* 자바스크립트  */
+
+.brush01,
+.brush02 {
+    transition: all 0.8s;
+}
+
+
+
+
+/* design nav 설정 */
+
+
+.design nav {
+    width: 80%;
+    height: 26vh;
+    position: fixed;
+    left: 10%;
+    top: 0;
+    z-index: 2;
+}
+
+.design nav.on {
+    display: none;
+}
+
+/* design 프로필, 홈 버튼 설정 */
+
+.design nav .dBtn {
+    position: absolute;
+    width: 12vw;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    top: -0.05vw;
+}
+
+.design nav .dBtn p {
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+.design nav .dBtn p:nth-child(1) {}
+
+.design nav .dBtn p:nth-child(2) {}
+
+
+
+.design nav .dBtn p img {
+    width: 5vw;
+    height: auto;
+}
+
+/* design 메뉴 설정 */
+.design nav ul {
+    position: absolute;
+    width: 25vw;
+    height: 30%;
+    left: 50%;
+    top: 20%;
+    margin-left: -12.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Aboreto', cursive;
+
+}
+
+.design nav li {width: 25%;
+    height: 45%;
+    text-align: center;}
+
+.design nav li.on {
+    font-weight: bold;
+    border-bottom: 2px solid #1c1c1c;
+}
+
+.design nav li.at {
+    border-color: #fff;
+}
+
+
+
+.design nav li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 1vw;
+    cursor: url('img/click.cur'),auto;
+    padding: 5% 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    
+}
+
+.design nav li a.on {
+    color: #fff;
+}
+
+
+/* design 아트버튼 설정 */
+
+.design nav .artBtn {
+    position: absolute;
+    right: 20%;
+    top: 32%;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+.design nav .artBtn p {
+    position: absolute;
+    font-size: 2.6vw;
+}
+
+.design nav .artBtn p:nth-child(1) {
+    font-family: 'Rubik Bubbles', cursive;
+    color: #FFC34A;
+    left: 2px;
+    top: 2px;
+}
+
+/* .artBtn color */
+.design nav .artBtn p:nth-child(1).aa {
+    color: #38BCA7;
+}
+
+.design nav .artBtn p:nth-child(1).bb {
+    color: #FFC34A;
+}
+
+.design nav .artBtn p:nth-child(1).cc {
+    color: #AF7AC9;
+}
+
+.design nav .artBtn p:nth-child(1).dd {
+    color: #FF5BA8;
+}
+
+.design nav .artBtn p:nth-child(1).ee {
+    color: #A7FFC7;
+}
+
+.design nav .artBtn p:nth-child(1).ff {
+    color: #EED04D;
+}
+
+.design nav .artBtn p:nth-child(2) {
+    font-family: 'Rubik Puddles', cursive;
+    left: 0;
+    top: 0;
+}
+
+.design nav .artBtn p:nth-child(2).on {
+    color: #fff;
+}
+
+/* design 아이콘 설정 */
+
+.design nav .icon01,
+.design nav .icon02 {
+    position: absolute;
+    width: 5.5vw;
+    height: 5.5vw;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+    z-index: 10;
+}
+
+.design nav .icon01.on {
+    display: block;
+}
+
+.design nav .icon02.on {
+    display: block;
+}
+
+
+.design nav .icon01 p,
+.design nav .icon02 p {
+    position: absolute;
+}
+
+.design nav .icon01 p:nth-child(1) {
+    background-image: url(img/design/icon_B01.png);
+    width: 2.6vw;
+    height: 2.6vw;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.3vw;
+    margin-left: -1.3vw;
+    background-size: cover;
+    background-position: center center;
+}
+
+.design nav .icon01 p:nth-child(2) {
+    width: 5.2vw;
+    height: 5.2vw;
+    left: 50%;
+    top: 50%;
+    margin-top: -2.6vw;
+    margin-left: -2.6vw;
+    background-image: url(img/design/icon_B02-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: icon 8s linear infinite;
+}
+
+
+
+/* design 아이콘 클릭시 컬러 변경 */
+
+.design nav .icon02 p:nth-child(1) {
+    background-image: url(img/design/icon_W01.png);
+    width: 2.6vw;
+    height: 2.6vw;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.3vw;
+    margin-left: -1.3vw;
+    background-size: cover;
+    background-position: center center;
+}
+
+.design nav .icon02 p:nth-child(2) {
+    width: 5.2vw;
+    height: 5.2vw;
+    left: 50%;
+    top: 50%;
+    margin-top: -2.6vw;
+    margin-left: -2.6vw;
+    background-image: url(img/design/icon_W02-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: icon 8s linear infinite;
+}
+
+
+
+
+/* scroll fixed 하기 */
+.design .scroll {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    background-color: #F4416D;
+    display: flex;
+    overflow: hidden;
+}
+
+/* 디자인 footer 설정 */
+.design footer {
+    position: fixed;
+    font-size: 0.7vw;
+    left: 1vw;
+    bottom: 1vw;
+    z-index: 3;
+    color: #1c1c1c;
+}
+
+.design footer.on {
+    color: #fff;
+}
+
+.design footer.aa {
+    display: none;
+}
+
+.design footer p:nth-child(1) {
+    margin-bottom: 0.3vw;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.design footer p:nth-child(2) {
+    font-family: 'Aboreto', cursive;
+    letter-spacing: 0.1vw;
+}
+
+
+
+/* menu01(춘식) 설정$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+.design .menu01 {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.design .menu01.on {
+    background-color: #257585;
+}
+
+
+/* 춘식 배경 설정 */
+.design .menu01 .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;
+}
+
+
+.design .menu01 .bg p {
+    position: absolute;
+}
+
+.design .menu01 .bg p:nth-child(1) {
+    width: 22vw;
+    height: 100%;
+    background-image: url(img/design/menu01_bg01.png);
+    background-size: cover;
+    background-position: center center;
+    left: 12%;
+    top: 0;
+
+}
+
+.design .menu01 .bg p:nth-child(1).on {
+    display: none;
+}
+
+.design .menu01 .bg p:nth-child(2) {
+    width: 14vw;
+    height: 100%;
+    background-image: url(img/design/menu01_bg02.png);
+    background-size: cover;
+    background-position: center center;
+    right: 0;
+    top: 0;
+}
+
+.design .menu01 .bg p:nth-child(2).on {
+    display: none;
+}
+
+.design .menu01 .bg p:nth-child(3) {
+    width: 15vw;
+    height: 10vw;
+    left: 10vw;
+    bottom: 10vh;
+    z-index: 2;
+    background-image: url(img/design/menu01_brush01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.design .menu01 .bg p:nth-child(3).on {
+    background-image: url(img/design/menu01_brush01-1.png);
+}
+
+
+.design .menu01 .bg p:nth-child(4) {
+    width: 11vw;
+    height: 8vw;
+    right: 20vw;
+    bottom: 53vh;
+    z-index: 2;
+    background-image: url(img/design/menu01_brush02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.design .menu01 .bg p:nth-child(4).on {
+    background-image: url(img/design/menu01_brush02-1.png);
+}
+
+
+.design .menu01 .bg .line {
+    background-image: url(img/design/menu01_line.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* 춘식 배경 별 넣기 */
+
+.design .menu01 .star {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.design .menu01 .star span {
+    position: absolute;
+}
+
+
+
+.design .menu01 .star span:nth-child(1) {
+    left: 11vw;
+    top: 42vh;
+    background-image: url(img/design/menu01_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3.5vw;
+    height: 5vw;
+    animation: star02 2s linear infinite;
+}
+
+.design .menu01 .star span:nth-child(1).on {
+    background-image: url(img/design/menu01_01-1.png);
+}
+
+.design .menu01 .star span:nth-child(2) {
+    left: 29vw;
+    bottom: 12vh;
+    background-image: url(img/design/menu01_02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5vw;
+    height: 2vw;
+    animation: star01 1s linear infinite;
+}
+
+.design .menu01 .star span:nth-child(2).on {
+    background-image: url(img/design/menu01_02-1.png);
+}
+
+.design .menu01 .star span:nth-child(3) {
+    left: 36vw;
+    bottom: 28vh;
+    background-image: url(img/design/menu01_03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3vw;
+    height: 4.5vw;
+    animation: star01 1.5s linear infinite;
+}
+
+.design .menu01 .star span:nth-child(3).on {
+    background-image: url(img/design/menu01_03-1.png);
+}
+
+.design .menu01 .star span:nth-child(4) {
+    left: 38vw;
+    bottom: 24vh;
+    background-image: url(img/design/menu01_04.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 3.5vw;
+    animation: star02 2s linear infinite;
+}
+
+.design .menu01 .star span:nth-child(4).on {
+    background-image: url(img/design/menu01_04-1.png);
+}
+
+.design .menu01 .star span:nth-child(5) {
+    right: 31vw;
+    bottom: 10vh;
+    background-image: url(img/design/menu01_05.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5vw;
+    height: 2vw;
+    animation: star02 1.2s linear infinite;
+}
+
+.design .menu01 .star span:nth-child(5).on {
+    background-image: url(img/design/menu01_05-1.png);
+}
+
+.design .menu01 .star span:nth-child(6) {
+    right: 28vw;
+    bottom: 12vh;
+    background-image: url(img/design/menu01_06.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2.5vw;
+    height: 4vw;
+    animation: star01 1.5s linear infinite;
+}
+
+.design .menu01 .star span:nth-child(6).on {
+    background-image: url(img/design/menu01_06-1.png);
+}
+
+.design .menu01 .star span:nth-child(7) {
+    right: 13.5vw;
+    top: 40vh;
+    background-image: url(img/design/menu01_07.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 3.5vw;
+    animation: star01 1.7s linear infinite;
+}
+
+.design .menu01 .star span:nth-child(7).on {
+    background-image: url(img/design/menu01_07-1.png);
+}
+
+.design .menu01 .star span:nth-child(8) {
+    right: 12vw;
+    top: 47.5vh;
+    background-image: url(img/design/menu01_08.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5vw;
+    height: 2vw;
+    animation: star01 1s linear infinite;
+}
+
+.design .menu01 .star span:nth-child(8).on {
+    background-image: url(img/design/menu01_08-1.png);
+}
+
+.design .menu01 .star span:nth-child(9) {
+    right: 8vw;
+    top: 41.5vh;
+    background-image: url(img/design/menu01_09.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3vw;
+    height: 4.5vw;
+    animation: star01 1.5s linear infinite;
+}
+
+.design .menu01 .star span:nth-child(9).on {
+    background-image: url(img/design/menu01_09-1.png);
+}
+
+/* 춘식 배경 텍스트 설정 */
+.design .menu01 .txt {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.design .menu01 .txt em {
+    font-style: normal;
+    font-family: 'Barrio', cursive;
+    font-size: 1.2vw;
+    position: absolute;
+}
+
+
+.design .menu01 .txt em:nth-child(1) {
+    color: #FF5BA8;
+    left: 31vw;
+    bottom: 3.5vw;
+    transform: rotate(20deg);
+    animation: txt01 1.5s linear infinite alternate;
+}
+
+@keyframes txt01 {
+    0% {
+        left: 31vw;
+        transform: rotate(18deg);
+    }
+
+    50% {
+        left: 30.5vw;
+        transform: rotate(20deg)
+    }
+
+    100% {
+        left: 31vw;
+        transform: rotate(22deg)
+    }
+}
+
+
+
+
+.design .menu01 .txt em:nth-child(1).on {
+    color: #38BCA7;
+}
+
+.design .menu01 .txt em:nth-child(2) {
+    color: #38BCA7;
+    left: 46vw;
+    bottom: 6.5vw;
+    transform: rotate(-15deg);
+    animation: txt02 2.5s linear infinite alternate;
+}
+
+
+@keyframes txt02 {
+    0% {
+        left: 46vw;
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        left: 46.5vw;
+        transform: rotate(-20deg)
+    }
+
+    100% {
+        left: 46vw;
+        transform: rotate(-15deg)
+    }
+}
+
+.design .menu01 .txt em:nth-child(2).on {
+    color: #FF5BA8;
+}
+
+.design .menu01 .txt em:nth-child(3) {
+    color: #AA93E8;
+    left: 55vw;
+    bottom: 6.5vw;
+    transform: rotate(-30deg);
+    animation: txt03 1.5s linear infinite alternate;
+}
+
+@keyframes txt03 {
+    0% {
+        left: 55vw;
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        left: 55.5vw;
+        transform: rotate(-34deg)
+    }
+
+    100% {
+        left: 55vw;
+        transform: rotate(-30deg)
+    }
+}
+
+.design .menu01 .txt em:nth-child(3).on {
+    color: #FFC881;
+}
+
+
+
+/* 춘식 타이틀 설정 */
+
+.design .menu01 .title {
+    width: 30vw;
+    height: 7vw;
+    position: absolute;
+    z-index: 3;
+    left: 31vw;
+    top: 20vh;
+    background-image: url(img/design/menu01_title.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.design .menu01 .title.on {
+    background-image: url(img/design/menu01_title-1.png);
+}
+
+
+/* 춘식 퍼블리싱 설정 */
+
+.design .menu01 .pub {
+    position: absolute;
+    width: 17vw;
+    height: 18vw;
+    left: 18vw;
+    bottom: 18vh;
+    z-index: 1;
+
+
+}
+
+.design .menu01 .pub strong {
+    font-size: 1.6vw;
+    font-family: 'Bungee Shade', cursive;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -32%;
+    top: 24%;
+    color: #143464;
+    font-weight: normal;
+}
+
+.design .menu01 .pub strong.on {
+    color: #fff
+}
+
+.design .menu01 .pub div {
+    width: 88%;
+    height: 100%;
+    background-color: #C6B1FF;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.design .menu01 .pub div.on {
+    background-color: #FFCAE3;
+}
+
+.design .menu01 .pub div:hover {
+    animation: ho 1.2s linear infinite;
+}
+
+.design .menu01 .pub div a {
+    display: block;
+    width: 85%;
+    height: 88%;
+    position: absolute;
+    left: 7.5%;
+    top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #fff 0.2vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: url('img/click.cur'),auto;
+}
+
+.design .menu01 .pub p {
+    width: 95%;
+    height: 95%;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.design .menu01 .pub p img {
+    width: auto;
+    height: 100%;
+
+}
+
+.design .menu01 .pub div span {
+    position: absolute;
+    width: 95%;
+    height: 1%;
+    left: 2.5%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.design .menu01 .pub div:hover span {
+    height: 95%;
+    top: 2.5%;
+    opacity: 1;
+}
+
+.design .menu01 .pub div a em {
+    font-family: 'Barrio', cursive;
+    color: #FF5BA8;
+    font-size: 2vw;
+    font-style: normal;
+    border-bottom: 0.3vw solid #FF5BA8;
+    height: 15%;
+    display: none;
+    position: absolute;
+    bottom: 1vw;
+}
+
+.design .menu01 .pub div a em.on {
+    color: #1f9480;
+    border-color: #1f9480;
+}
+
+.design .menu01 .pub div:hover em {
+    display: block;
+    height: 15%;
+}
+
+
+/* 춘식 디자인 설정 */
+.design .menu01 .dsi {
+    position: absolute;
+    z-index: 1;
+    left: 37vw;
+    bottom: 32vh;
+    width: 28vw;
+    height: 16vw;
+    transform: translate3d(5vw, 2.5vw, 3vw);
+    perspective: 5vw;
+}
+
+.design .menu01 .dsi strong {
+    font-size: 1.6vw;
+    font-family: 'Bungee Shade', cursive;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -11%;
+    top: 11%;
+    color: #143464;
+    font-weight: normal;
+}
+
+.design .menu01 .dsi strong.on {
+    color: #fff;
+}
+
+
+.design .menu01 .dsiImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 2vw;
+    border: #143464 solid 0.1vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+    transition: all 0.8s;
+}
+
+
+.design .menu01 .dsiImg.on {
+    border-color: #fff;
+}
+
+.design .menu01 .dsiImg:hover {
+    animation: ho 1.2s linear infinite;
+}
+
+.design .menu01 .dsiImg p img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.design .menu01 .dsiBox01 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.design .menu01 .dsiBox01 p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+
+.design .menu01 .dsiBox01 p:nth-child(6) {
+    transform: translate3d(2.5vw, 1.5vw, 0vw);
+}
+
+.design .menu01 .dsiBox01 p:nth-child(5) {
+    transform: translate3d(2vw, 1.2vw, 0vw);
+}
+
+.design .menu01 .dsiBox01 p:nth-child(4) {
+    transform: translate3d(1.5vw, 0.9vw, 0vw);
+}
+
+.design .menu01 .dsiBox01 p:nth-child(3) {
+    transform: translate3d(1vw, 0.6vw, 0vw);
+}
+
+.design .menu01 .dsiBox01 p:nth-child(2) {
+    transform: translate3d(0.5vw, 0.3vw, 0vw);
+}
+
+.design .menu01 .dsiBox01 p:nth-child(1) {
+    transform: translate3d(0vw, 0vw, 0);
+}
+
+
+
+
+
+/* dsiBox02 설정 - 이미지 바뀌는 용 */
+
+.design .menu01 .dsiBox02 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.design .menu01 .dsiBox02 p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transform: translate3d(2.5vw, 1.5vw, 0vw);
+
+    border: #143464 solid 0.1vw;
+    opacity: 0;
+}
+
+.design .menu01 .dsiBox02 p.at {
+    border-color: #fff;
+}
+
+.design .menu01 .dsiBox02 p.on {
+    opacity: 1;
+
+}
+
+
+
+/* .design .menu01 호버 설정*/
+
+
+.design .menu01 .hover {
+    width: 100%;
+    height: 1%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: translate3d(2.5vw, 1.5vw, 0vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+    opacity: 0;
+    z-index: 2;
+}
+
+
+.design .menu01 .dsiImg:hover .hover {
+    height: 100%;
+    top: 0;
+    opacity: 1;
+}
+
+.design .menu01 .hover span {
+    font-family: 'Barrio', cursive;
+    color: #1f9480;
+    height: 1%;
+    font-size: 2vw;
+    border-bottom: 0.3vw solid #1f9480;
+    position: absolute;
+    display: none;
+}
+
+.design .menu01 .hover span.on {
+    color: #FF5BA8;
+    border-color: #FF5BA8;
+}
+
+.design .menu01 .dsiImg:hover span {
+    height: 15%;
+    display: block;
+}
+
+
+
+
+.design .menu01 .dsiBtn {
+    width: 1.5vw;
+    height: 4vw;
+    position: absolute;
+    right: -7vw;
+    top: 7vh;
+}
+
+.design .menu01 .dsiBtn span {
+    display: block;
+    margin-top: 30%;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+.design .menu01 .dsiBtn span:hover i {
+    opacity: 0.8;
+}
+
+.design .menu01 .dsiBtn i {
+    font-size: 1.3vw;
+    color: #38BCA7;
+}
+
+.design .menu01 .dsiBtn i.on {
+    color: #AA93E8;
+}
+
+
+/* 춘식 첫페이지 & 마지막페이지 텍스트 */
+
+.design .menu01 .start,
+.design .menu01 .end {
+    opacity: 0;
+    transform: translate3d(2.5vw, 1.5vw, 0vw);
+    width: 10vw;
+    height: 10vw;
+    top: 50%;
+    left: 50%;
+    margin-left: -5vw;
+    margin-top: -5vw;
+    position: absolute;
+    border-radius: 50%;
+    font-family: 'Barrio', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5vw;
+    background-color: #ff5ba87c;
+    transition: all 0.5s;
+
+}
+
+
+.design .menu01 .start.at {
+    background-color: #38bca680;
+}
+
+
+.design .menu01 .start.on {
+    opacity: 1;
+}
+
+.design .menu01 .end.at {
+    background-color: #38bca680;
+}
+
+
+.design .menu01 .end.on {
+    opacity: 1;
+}
+
+
+/* 춘식 컨셉뷰 설정 */
+.design .menu01 .view {
+    width: 15vw;
+    height: 14vw;
+    position: absolute;
+    right: 12vw;
+    bottom: 10vh;
+    z-index: 2;
+
+}
+
+.design .menu01 .view div:hover {
+    animation: ho 1.2s linear infinite;
+}
+
+
+
+.design .menu01 .view strong {
+    color: #143464;
+    font-size: 2vw;
+    font-family: 'Londrina Shadow', cursive;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 15%;
+}
+
+.design .menu01 .view strong.on {
+    color: #fff;
+}
+
+.design .menu01 .view div {
+    width: 100%;
+    height: 85%;
+    background-color: #38BCA7;
+    position: relative;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+.design .menu01 .view div.on {
+    background-color: #FF5BA8;
+}
+
+.design .menu01 .view p {
+    width: 90%;
+    height: 85%;
+    position: absolute;
+    left: 5%;
+    top: 7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #fff 0.2vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.design .menu01 .view img {
+    height: 95%;
+    width: auto;
+}
+
+
+.design .menu01 .view div span {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    height: 1%;
+    left: 2.5%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.design .menu01 .view div:hover span {
+    height: 95%;
+    top: 2.5%;
+    opacity: 1;
+}
+
+.design .menu01 .view div em {
+    font-family: 'Barrio', cursive;
+    color: #FF5BA8;
+    font-size: 1.2vw;
+    font-style: normal;
+    border-bottom: 0.2vw solid #FF5BA8;
+    height: 1%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: all 0.8s;
+}
+
+.design .menu01 .view div em:nth-child(1) {
+    top: 30%;
+}
+
+.design .menu01 .view div em:nth-child(2) {
+    top: 50%;
+}
+
+.design .menu01 .view div em.on {
+    color: #1f9480;
+    border-color: #1f9480;
+}
+
+.design .menu01 .view div:hover em {
+    opacity: 1;
+    height: 15%;
+}
+
+
+
+
+
+
+
+
+
+/* main 설정$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 수정 */
+
+.design .main {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.8s;
+}
+
+.design .main.on {
+    background-color: #F4416D;
+}
+
+
+
+/* 메인 배경 설정 */
+
+
+.design .main .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;
+}
+
+.design .main .bg p {
+    position: absolute;
+
+}
+
+.design .main .bg p:nth-child(1) {
+    width: 15vw;
+    height: 100%;
+    background-image: url(img/design/main_bg01.png);
+    background-size: cover;
+    background-position: center center;
+    left: 0;
+    top: 0;
+}
+
+.design .main .bg p:nth-child(1).on {
+    display: none;
+}
+
+.design .main .bg p:nth-child(2) {
+    width: 22vw;
+    height: 100%;
+    background-image: url(img/design/main_bg02.png);
+    background-size: cover;
+    background-position: center center;
+    left: 50%;
+    margin-left: -11vw;
+
+}
+
+.design .main .bg p:nth-child(2).on {
+    display: none;
+}
+
+
+.design .main .bg p:nth-child(3) {
+    width: 11vw;
+    height: 8vw;
+    left: 36vw;
+    bottom: 5vh;
+    z-index: 2;
+    background-image: url(img/design/main_brush01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.design .main .bg p:nth-child(3).on {
+    background-image: url(img/design/main_brush01-1.png);
+}
+
+
+.design .main .bg p:nth-child(4) {
+    width: 12vw;
+    height: 9vw;
+    right: 12vw;
+    bottom: 8vh;
+    z-index: 2;
+    background-image: url(img/design/main_brush02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.design .main .bg p:nth-child(4).on {
+    background-image: url(img/design/main_brush02-1.png);
+}
+
+.design .main .bg .line {
+    background-image: url(img/design/main_line.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* 메인 배경 별 넣기 */
+
+.design .main .star {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.design .main .star span {
+    position: absolute;
+}
+
+
+
+.design .main .star span:nth-child(1) {
+    left: 12vw;
+    top: 31vh;
+    background-image: url(img/design/main_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 3.5vw;
+    animation: star02 2s linear infinite;
+
+}
+
+.design .main .star span:nth-child(1).on {
+    background-image: url(img/design/main_01-1.png);
+}
+
+.design .main .star span:nth-child(2) {
+    left: 13vw;
+    top: 24vh;
+    background-image: url(img/design/main_02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3.5vw;
+    height: 5vw;
+    animation: star01 1.5s linear infinite;
+
+
+}
+
+.design .main .star span:nth-child(2).on {
+    background-image: url(img/design/main_02-1.png);
+}
+
+.design .main .star span:nth-child(3) {
+    left: 23vw;
+    bottom: 36vh;
+    background-image: url(img/design/main_03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 3.5vw;
+    animation: star02 2s linear infinite;
+}
+
+.design .main .star span:nth-child(3).on {
+    background-image: url(img/design/main_03-1.png);
+}
+
+.design .main .star span:nth-child(4) {
+    left: 58.5vw;
+    bottom: 7vh;
+    background-image: url(img/design/main_04.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 3.5vw;
+    animation: star01 1.2s linear infinite;
+}
+
+.design .main .star span:nth-child(4).on {
+    background-image: url(img/design/main_04-1.png);
+}
+
+.design .main .star span:nth-child(5) {
+    left: 60vw;
+    bottom: 6vh;
+    background-image: url(img/design/main_05.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5vw;
+    height: 2vw;
+    animation: star02 1.5s linear infinite;
+}
+
+.design .main .star span:nth-child(5).on {
+    background-image: url(img/design/main_05-1.png);
+}
+
+.design .main .star span:nth-child(6) {
+    right: 27vw;
+    top: 44vh;
+    background-image: url(img/design/main_06.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 3.5vw;
+    animation: star02 2s linear infinite;
+}
+
+.design .main .star span:nth-child(6).on {
+    background-image: url(img/design/main_06-1.png);
+}
+
+.design .main .star span:nth-child(7) {
+    right: 26vw;
+    top: 40vh;
+    background-image: url(img/design/main_07.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5vw;
+    height: 2vw;
+    animation: star01 1s linear infinite;
+}
+
+.design .main .star span:nth-child(7).on {
+    background-image: url(img/design/main_07-1.png);
+}
+
+.design .main .star span:nth-child(8) {
+    right: 22vw;
+    top: 46vh;
+    background-image: url(img/design/main_08.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3vw;
+    height: 4.5vw;
+    animation: star01 1.5s linear infinite;
+}
+
+.design .main .star span:nth-child(8).on {
+    background-image: url(img/design/main_08-1.png);
+}
+
+
+/* 메인 배경 텍스트 설정 */
+
+.design .main .txt {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.design .main .txt em {
+
+    font-style: normal;
+    font-family: 'Barrio', cursive;
+    font-size: 1.4vw;
+    position: absolute;
+}
+
+
+.design .main .txt em:nth-child(1) {
+    color: #F67944;
+    left: 10vw;
+    bottom: 11vw;
+    transform: rotate(25deg);
+    animation: txt04 1.5s linear infinite alternate;
+}
+
+@keyframes txt04 {
+    0% {
+        left: 10vw;
+        transform: rotate(24deg);
+    }
+
+    50% {
+        left: 10.5vw;
+        transform: rotate(25deg)
+    }
+
+    100% {
+        left: 10vw;
+        transform: rotate(24deg)
+    }
+}
+
+.design .main .txt em:nth-child(1).on {
+    color: #A9EEC2;
+}
+
+.design .main .txt em:nth-child(2) {
+    color: #A9EEC2;
+    left: 22vw;
+    bottom: 6vw;
+    transform: rotate(21deg);
+    animation: txt05 2.5s linear infinite alternate;
+
+}
+
+
+@keyframes txt05 {
+    0% {
+        left: 21.8vw;
+        transform: rotate(22deg);
+    }
+
+    50% {
+        left: 22vw;
+        transform: rotate(21deg)
+    }
+
+    100% {
+        left: 21.8vw;
+        transform: rotate(18deg)
+    }
+}
+
+
+.design .main .txt em:nth-child(2).on {
+    color: #FFC34A;
+}
+
+.design .main .txt em:nth-child(3) {
+    color: #6CF39D;
+    right: 14vw;
+    bottom: 28vw;
+    transform: rotate(-30deg);
+    animation: txt06 1.5s linear infinite alternate;
+
+}
+
+@keyframes txt06 {
+    0% {
+        right: 14vw;
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        right: 14.5vw;
+        transform: rotate(-35deg);
+    }
+
+    100% {
+        right: 14vw;
+        transform: rotate(-30deg);
+    }
+}
+
+.design .main .txt em:nth-child(3).on {
+    color: #FFAAA5;
+}
+
+.design .main .txt em:nth-child(4) {
+    color: #FFAAA5;
+    right: 3vw;
+    bottom: 29.5vw;
+    transform: rotate(5deg);
+    animation: txt07 1.5s linear infinite alternate;
+}
+
+@keyframes txt07 {
+    0% {
+        right: 3vw;
+        transform: rotate(7deg);
+    }
+
+    50% {
+        right: 3.5vw;
+        transform: rotate(5deg);
+    }
+
+    100% {
+        right: 3vw;
+        transform: rotate(7deg);
+    }
+}
+
+.design .main .txt em:nth-child(4).on {
+    color: #CBE89C;
+}
+
+/* 메인 어포던스 디자인 */
+.design .main .affor {
+    position: absolute;
+    width: 95%;
+    height: 5%;
+    top: 50%;
+    left: 50%;
+    margin-left: -47.5%;
+    font-family: 'Bad Script', cursive;
+    font-size: 1vw;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.design .main .affor.on {
+    color: #fff;
+}
+
+.design .main .affor i {
+    font-size: 1.2vw;
+    animation: affi 1.2s linear infinite;
+}
+
+.design .main .affor span {
+    position: absolute;
+    top: 0;
+}
+
+.design .main .affor .left span {
+    left: 3vw;
+    animation: aff01 1.8s linear infinite;
+}
+
+.design .main .affor .right span {
+    right: 3vw;
+    animation: aff02 1.8s linear infinite;
+}
+
+
+
+
+/* 라잇 */
+/* 메인 콘텐츠 - 이미지 넣어야함 (수정) */
+/* 자스 */
+.design .main .mainCon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 56vw;
+    height: 33vw;
+    margin-left: -28vw;
+    margin-top: -16.5vw;
+    z-index: 1;
+    perspective: 1000px;
+}
+
+
+
+
+.design .main .bigImg {
+    width: 36vw;
+    height: 24vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    background-color: #555;
+    transform: translateZ(-1000px);
+    transition: all 1.2s;
+    opacity: 0;
+}
+
+.design .main .bigImg.show {opacity: 1;
+    transform: translateZ(0);
+}
+
+
+/* 자스 (나중에 플러그인으로 글씨 써지는 느낌으로) */
+.design .main .title {
+    width: 20vw;
+    height: 9vw;
+    position: absolute;
+    left: -3vw;
+    top: 12vh;
+    background-image: url(img/design/main_title.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    transform: translateZ(50vw);
+    transition: all 1.2s;
+
+}
+
+.design .main .title.on {
+    background-image: url(img/design/main_title-1.png);
+}
+
+.design .main .title.show {transform: translateZ(0);
+opacity: 1;}
+
+
+.design .main .txt01 {
+    color: #FFC34A;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 3.6vw;
+    position: absolute;
+    left: 4vw;
+    top: 44vh;
+    transition: all 1.2s;
+opacity: 0;
+}
+
+.design .main .txt01.show {opacity: 1;}
+
+.design .main .txt01.on {
+    color: #CBE89C;
+}
+
+.design .main .txt02 {
+    width: 20vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.design .main .txt02 p {}
+
+.design .main .txt02 p:nth-child(1) {
+    font-family: 'Sarina', cursive;
+    font-size: 1.5vw;
+    color: #56C67E;
+    transition: all 1.2s;
+    opacity: 0;
+    transform: translateX(-5vw);
+}
+
+
+.design .main .txt02 p:nth-child(1).on {
+    color: #FFDEDE;
+}
+
+.design .main .txt02 p:nth-child(2) {
+    font-size: 4vw;
+    position: absolute;
+    right: 0;
+    top: 2vh;
+    color: #F67944;
+    font-family: 'Londrina Shadow', cursive;
+    transition: all 1.2s;
+    opacity: 0;
+    transform: translateX(5vw);
+}
+
+.design .main .txt02 p:nth-child(2).on {
+    color: #A7FFC7;
+}
+
+.design .main .txt02 p.show {
+    opacity: 1;
+    transform: translateX(0);}
+
+
+
+.design .main .hover {
+    width: 12vw;
+    height: 30vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.design .main .img {
+    width: 12vw;
+    height: 15vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: solid 0.3vw #FF5C6D;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.2s;
+    /* ease-in-out 보류 수정 */
+    opacity: 0;
+    transform: rotateY(360deg);
+}
+
+.design .main .hover:hover .img {
+    transform: rotateY(360deg);
+}
+
+
+.design .main .img.on {
+    border-color: #6CF39D;
+}
+
+.design .main .img.show {opacity: 1;
+    transform: rotateY(0);}
+
+
+
+.design .main .img p {
+    width: 85%;
+    height: 90%;
+    background-color: #ccc;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+
+.design .main .img span {
+    position: absolute;
+    width: 1%;
+    height: 90%;
+    left: 50%;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.design .main .img:hover span {
+    width: 85%;
+    left: 7.5%;
+    opacity: 1;
+}
+
+.design .main .img em {
+    font-family: 'Barrio', cursive;
+    color: #F4416D;
+    font-size: 1.4vw;
+    font-style: normal;
+    border-bottom: 0.2vw solid #F4416D;
+    height: 1%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: all 0.8s;
+}
+
+.design .main .img em:nth-child(1) {
+    top: 30%;
+}
+
+.design .main .img em:nth-child(2) {
+    top: 50%;
+}
+
+.design .main .img em.on {
+    color: #6CF39D;
+    border-color: #6CF39D;
+}
+
+.design .main .img:hover em {
+    opacity: 1;
+    height: 15%;
+}
+
+
+
+
+
+/* menu02(모네) 설정 */
+.design .menu02 {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.8s;
+}
+
+.design .menu02.on {
+    background-color: #65168A;
+}
+
+/* 모네 배경 설정 */
+
+.design .menu02 .bg p {
+    position: absolute;
+}
+
+.design .menu02 .bg p:nth-child(1) {
+    width: 22vw;
+    height: 100%;
+    background-image: url(img/design/menu02_bg01.png);
+    background-size: cover;
+    background-position: center center;
+    left: 20%;
+    top: 0;
+
+}
+
+.design .menu02 .bg p:nth-child(1).on {
+    display: none;
+}
+
+.design .menu02 .bg p:nth-child(2) {
+    width: 14vw;
+    height: 100%;
+    background-image: url(img/design/menu02_bg02.png);
+    background-size: cover;
+    background-position: center center;
+    right: 0;
+    top: 0;
+}
+
+.design .menu02 .bg p:nth-child(2).on {
+    display: none;
+}
+
+.design .menu02 .bg p:nth-child(3) {
+    width: 15vw;
+    height: 10vw;
+    left: 10vw;
+    bottom: 14vh;
+    z-index: 1;
+    background-image: url(img/design/menu02_brush01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.design .menu02 .bg p:nth-child(3).on {
+    background-image: url(img/design/menu02_brush01-1.png);
+}
+
+
+.design .menu02 .bg p:nth-child(4) {
+    width: 13vw;
+    height: 10vw;
+    right: 5vw;
+    bottom: 3vh;
+    z-index: 2;
+    background-image: url(img/design/menu02_brush02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.design .menu02 .bg p:nth-child(4).on {
+    background-image: url(img/design/menu02_brush02-1.png);
+}
+
+
+.design .menu02 .bg .line {
+    background-image: url(img/design/menu02_line.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vw;
+    position: absolute;
+    bottom: -0.15vw;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+
+/* 모네 배경 별 넣기 */
+
+.design .menu02 .star {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.design .menu02 .star span {
+    position: absolute;
+}
+
+
+
+.design .menu02 .star span:nth-child(1) {
+    left: 8vw;
+    bottom: 30vh;
+    background-image: url(img/design/menu02_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3.5vw;
+    height: 5vw;
+    animation: star01 1.5s linear infinite;
+}
+
+.design .menu02 .star span:nth-child(1).on {
+    background-image: url(img/design/menu02_01-1.png);
+}
+
+.design .menu02 .star span:nth-child(2) {
+    left: 36vw;
+    bottom: 12vh;
+    background-image: url(img/design/menu02_02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 3.5vw;
+    animation: star02 2s linear infinite;
+
+}
+
+.design .menu02 .star span:nth-child(2).on {
+    background-image: url(img/design/menu02_02-1.png);
+}
+
+.design .menu02 .star span:nth-child(3) {
+    left: 48vw;
+    top: 22vh;
+    background-image: url(img/design/menu02_03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3vw;
+    height: 5vw;
+    animation: star02 2s linear infinite;
+}
+
+.design .menu02 .star span:nth-child(3).on {
+    background-image: url(img/design/menu02_03-1.png);
+}
+
+.design .menu02 .star span:nth-child(4) {
+    left: 50.5vw;
+    top: 28vh;
+    background-image: url(img/design/menu02_04.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 3.5vw;
+    animation: star01 1.5s linear infinite;
+}
+
+.design .menu02 .star span:nth-child(4).on {
+    background-image: url(img/design/menu02_04-1.png);
+}
+
+.design .menu02 .star span:nth-child(5) {
+    right: 32vw;
+    bottom: 36vh;
+    background-image: url(img/design/menu02_05.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2.5vw;
+    height: 4vw;
+    animation: star01 1.5s linear infinite;
+}
+
+.design .menu02 .star span:nth-child(5).on {
+    background-image: url(img/design/menu02_05-1.png);
+}
+
+.design .menu02 .star span:nth-child(6) {
+    right: 31vw;
+    bottom: 34vh;
+    background-image: url(img/design/menu02_06.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5vw;
+    height: 2vw;
+    animation: star01 1s linear infinite;
+}
+
+.design .menu02 .star span:nth-child(6).on {
+    background-image: url(img/design/menu02_06-1.png);
+}
+
+.design .menu02 .star span:nth-child(7) {
+    right: 28vw;
+    top: 42vh;
+    background-image: url(img/design/menu02_07.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5vw;
+    height: 2vw;
+    animation: star02 2s linear infinite;
+}
+
+.design .menu02 .star span:nth-child(7).on {
+    background-image: url(img/design/menu02_07-1.png);
+}
+
+.design .menu02 .star span:nth-child(8) {
+    right: 10vw;
+    top: 28vh;
+    background-image: url(img/design/menu02_08.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 3.5vw;
+    animation: star02 2s linear infinite;
+}
+
+.design .menu02 .star span:nth-child(8).on {
+    background-image: url(img/design/menu02_08-1.png);
+}
+
+.design .menu02 .star span:nth-child(9) {
+    right: 7vw;
+    top: 27.5vh;
+    background-image: url(img/design/menu02_09.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3vw;
+    height: 4.5vw;
+    animation: star01 1.5s linear infinite;
+}
+
+.design .menu02 .star span:nth-child(9).on {
+    background-image: url(img/design/menu02_09-1.png);
+}
+
+.design .menu02 .star span:nth-child(10) {
+    right: 6.5vw;
+    top: 24vh;
+    background-image: url(img/design/menu02_10.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5vw;
+    height: 2vw;
+    animation: star01 1s linear infinite;
+}
+
+.design .menu02 .star span:nth-child(10).on {
+    background-image: url(img/design/menu02_10-1.png);
+}
+
+
+
+/* 모네 배경 텍스트 설정 */
+
+.design .menu02 .txt {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.design .menu02 .txt em {
+
+    font-style: normal;
+    font-family: 'Barrio', cursive;
+    font-size: 1.2vw;
+    position: absolute;
+}
+
+
+.design .menu02 .txt em:nth-child(1) {
+    color: #8B649D;
+    left: 30vw;
+    bottom: 9vw;
+    transform: rotate(30deg);
+
+    animation: txt08 1.2s linear infinite alternate;
+}
+
+@keyframes txt08 {
+    0% {
+        left: 30vw;
+        transform: rotate(28deg);
+    }
+
+    50% {
+        left: 30.5vw;
+        transform: rotate(30deg);
+    }
+
+    100% {
+        left: 30vw;
+        transform: rotate(32deg);
+    }
+}
+
+.design .menu02 .txt em:nth-child(1).on {
+    color: #C9ABD8;
+}
+
+.design .menu02 .txt em:nth-child(2) {
+    color: #80479d;
+    left: 40vw;
+    bottom: 8vw;
+    transform: rotate(25deg);
+    animation: txt09 1.8s linear infinite alternate;
+
+}
+
+@keyframes txt09 {
+    0% {
+        left: 39.5vw;
+        transform: rotate(23deg);
+    }
+
+    50% {
+        left: 40vw;
+        transform: rotate(25deg);
+    }
+
+    100% {
+        left: 39.5vw;
+        transform: rotate(20deg);
+    }
+}
+
+.design .menu02 .txt em:nth-child(2).on {
+    color: #ebd5f5;
+}
+
+.design .menu02 .txt em:nth-child(3) {
+    color: #8B649D;
+    right: 2.5vw;
+    bottom: 27.5vw;
+    animation: txt10 1.5s linear infinite alternate;
+
+}
+
+@keyframes txt10 {
+    0% {
+        right: 2.5vw;
+
+    }
+
+    50% {
+        right: 3vw;
+        transform: rotate(5deg);
+    }
+
+    100% {
+        right: 2.5vw;
+
+    }
+}
+
+.design .menu02 .txt em:nth-child(3).on {
+    color: #C9ABD8;
+}
+
+
+
+/* 모네 타이틀 설정 */
+
+.design .menu02 .title {
+    width: 30vw;
+    height: 7vw;
+    position: absolute;
+    z-index: 3;
+    right: 12vw;
+    top: 25vh;
+    background-image: url(img/design/menu02_title.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.design .menu02 .title.on {
+    background-image: url(img/design/menu02_title-1.png);
+}
+
+
+
+/* 모네 디자인 설정 */
+.design .menu02 .dsi {
+    position: absolute;
+    z-index: 1;
+    left: 14vw;
+    bottom: 28vh;
+    width: 36vw;
+    height: 20vw;
+    perspective: 5vw;
+
+}
+
+
+.design .menu02 .dsi strong {
+    font-size: 1.6vw;
+    font-family: 'Bungee Shade', cursive;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -9%;
+    top: 8%;
+    color: #65168A;
+    font-weight: normal;
+}
+
+.design .menu02 .dsi strong.on {
+    color: #EED04D;
+}
+
+.design .menu02 .dsiImg {
+    width: 94%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: #65168A solid 0.3vw;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+}
+
+.design .menu02 .dsiImg.on {
+    border-color: #d4b83c;
+}
+
+
+.design .menu02 .dsiImg:hover {
+    animation: ho 1.2s linear infinite;
+}
+
+
+
+.design .menu02 .dsiImg p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1%;
+    height: 1%;
+    background-color: #ddd;
+    overflow: hidden;
+    transition: all 0.8s;
+    opacity: 0;
+
+}
+
+.design .menu02 .dsiImg p.on {
+
+    opacity: 1;
+    height: 92%;
+    width: 95%;
+    top: 4%;
+    left: 2.5%;
+
+}
+
+
+.design .menu02 .dsiImg p img {
+    height: 100%;
+    width: auto;
+}
+
+
+.design .menu02 .hover {
+    left: 2.5%;
+    top: 50%;
+    width: 95%;
+    height: 1%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.design .menu02 .dsiImg:hover .hover {
+    height: 92%;
+    top: 4%;
+    opacity: 1;
+}
+
+.design .menu02 .hover span {
+    font-family: 'Barrio', cursive;
+    color: #8136A4;
+    height: 1%;
+    font-size: 2vw;
+    border-bottom: 0.3vw solid #8136A4;
+    position: absolute;
+    display: none;
+}
+
+.design .menu02 .hover span.on {
+    color: #9859B7;
+    border-color: #9859B7;
+}
+
+.design .menu02 .dsiImg:hover span {
+    height: 15%;
+    display: block;
+}
+
+.design .menu02 .dsiBtn {
+    width: 1.5vw;
+    height: 4vw;
+    position: absolute;
+    right: -2vw;
+    top: 7vh;
+}
+
+
+
+.design .menu02 .dsiBtn span {
+    display: block;
+    margin-top: 30%;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+.design .menu02 .dsiBtn span:hover i {
+    opacity: 0.8;
+}
+
+.design .menu02 .dsiBtn i {
+    font-size: 1.3vw;
+    color: #AF7AC9;
+}
+
+.design .menu02 .dsiBtn i.on {
+    color: #EED04D;
+}
+
+/* 모네 첫페이지 & 마지막페이지 텍스트 */
+
+.design .menu02 .start,
+.design .menu02 .end {
+    opacity: 0;
+    width: 10vw;
+    height: 10vw;
+    top: 50%;
+    left: 50%;
+    margin-left: -5vw;
+    margin-top: -5vw;
+    position: absolute;
+    border-radius: 50%;
+    font-family: 'Barrio', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5vw;
+    background-color: #eed04d80;
+    transition: all 0.5s;
+
+
+}
+
+
+.design .menu02 .start.at {
+    background-color: #af7ac981;
+}
+
+
+.design .menu02 .start.on {
+    opacity: 1;
+}
+
+.design .menu02 .end.at {
+    background-color: #af7ac981;
+}
+
+
+.design .menu02 .end.on {
+    opacity: 1;
+}
+
+
+/* 모네 컨셉뷰 설정 */
+.design .menu02 .view {
+    width: 18vw;
+    height: 17vw;
+    position: absolute;
+    left: 48vw;
+    bottom: 7vh;
+    z-index: 2;
+
+}
+
+.design .menu02 .view strong {
+    color: #65168A;
+    font-size: 2vw;
+    font-family: 'Londrina Shadow', cursive;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 15%;
+}
+
+.design .menu02 .view strong.on {
+    color: #EED04D;
+}
+
+.design .menu02 .view div {
+    width: 100%;
+    height: 85%;
+    background-color: #AF7AC9;
+    position: relative;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+.design .menu02 .view div.on {
+    background-color: #9859B7;
+}
+
+.design .menu02 .view div:hover {
+    animation: ho 1.2s linear infinite;
+}
+
+.design .menu02 .view p {
+    width: 90%;
+    height: 85%;
+    position: absolute;
+    left: 5%;
+    top: 7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #fff 0.2vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+.design .menu02 .view img {
+    height: 95%;
+    width: 95%;
+}
+
+
+.design .menu02 .view div span {
+    position: absolute;
+    width: 95%;
+    height: 1%;
+    left: 2.5%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.design .menu02 .view div:hover span {
+    height: 95%;
+    top: 2.5%;
+    opacity: 1;
+}
+
+.design .menu02 .view div em {
+    font-family: 'Barrio', cursive;
+    color: #9859B7;
+    font-size: 1.2vw;
+    font-style: normal;
+    border-bottom: 0.2vw solid #9859B7;
+    height: 1%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: all 0.8s;
+}
+
+.design .menu02 .view div em:nth-child(1) {
+    top: 30%;
+}
+
+.design .menu02 .view div em:nth-child(2) {
+    top: 50%;
+}
+
+.design .menu02 .view div em.on {
+    color: #8136A4;
+    border-color: #8136A4;
+}
+
+.design .menu02 .view div:hover em {
+    opacity: 1;
+    height: 15%;
+}
+
+
+/* 모네 퍼블리싱 설정 */
+
+.design .menu02 .pub {
+    position: absolute;
+    width: 17vw;
+    height: 18vw;
+    right: 10vw;
+    bottom: 13vh;
+    z-index: 1;
+
+}
+
+.design .menu02 .pub strong {
+    font-size: 1.6vw;
+    font-family: 'Bungee Shade', cursive;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -33%;
+    top: 24%;
+    color: #65168A;
+    font-weight: normal;
+}
+
+.design .menu02 .pub strong.on {
+    color: #EED04D
+}
+
+.design .menu02 .pub div {
+    width: 86%;
+    height: 100%;
+    background-color: #8136A4;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.design .menu02 .pub div:hover {
+    animation: ho 1.2s linear infinite;
+}
+
+.design .menu02 .pub div.on {
+    background-color: #EED04D;
+}
+
+.design .menu02 .pub div a {
+    display: block;
+    width: 85%;
+    height: 88%;
+    position: absolute;
+    left: 7.5%;
+    top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #fff 0.2vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: url('img/click.cur'),auto;
+}
+
+.design .menu02 .pub p {
+    width: 95%;
+    height: 95%;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.design .menu02 .pub p img {
+    width: 100%;
+    height: auto;
+    translate: 0 -1.4vw;
+
+}
+
+.design .menu02 .pub div span {
+    position: absolute;
+    width: 95%;
+    height: 1%;
+    left: 2.5%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.design .menu02 .pub div:hover span {
+    height: 95%;
+    top: 2.5%;
+    opacity: 1;
+}
+
+.design .menu02 .pub div a em {
+    font-family: 'Barrio', cursive;
+    color: #8136A4;
+    font-size: 2vw;
+    font-style: normal;
+    border-bottom: 0.3vw solid #8136A4;
+    height: 15%;
+    display: none;
+    position: absolute;
+    bottom: 1vw;
+}
+
+.design .menu02 .pub div a em.on {
+    color: #9859B7;
+    border-color: #9859B7;
+}
+
+.design .menu02 .pub div:hover em {
+    display: block;
+    height: 15%;
+}
+
+
+
+
+/* @@@@@@@팝업창 */
+
+
+
+/* 프로필 팝업창 */
+.info {width: 100%;
+height: 100%;
+background-color: #f6dcff80;
+position: fixed;
+left: 0;
+top: 0;
+z-index: 50;
+display: none;
+}
+
+
+.info p {width: 80%;
+height: 100%;
+margin-left: 10%;
+display: flex;
+justify-content: center;}
+.info  img {height: 100%;
+width: auto;}
+
+.info span {position: absolute;
+right: 2vw;
+top: 2vh;}
+
+.info span i {font-size: 3vw;
+color: #C087FF;
+cursor: pointer;
+cursor: url('img/click.cur'),auto;}
+
+.info span i.on {color: #fff;}
+
+
+
+/* 춘식 컨셉뷰 팝업창 */
+.viewC {
+    width: 100%;
+background-color: #ede2f2;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 50;
+display: none;
+}
+
+.viewC P {
+    width: 60%;
+height: 100%;
+margin-left: 20%;
+display: flex;
+justify-content: center;
+}
+
+.viewC img {width: 100%;
+height: auto;}
+
+.viewC span {position: fixed;
+    right: 2vw;
+    top: 2vh;}
+
+.viewC i {font-size: 3vw;
+    color: #C087FF;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+    opacity: 0.5;}
+
+    .viewC i.on {color: #fff;}
+
+
+
+/* 모네 컨셉뷰 팝업창 */
+.viewM {
+    width: 100%;
+background-color: #5d4994;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 50;
+display: none;
+}
+
+.viewM P {
+    width: 60%;
+height: 100%;
+margin-left: 20%;
+display: flex;
+justify-content: center;
+}
+
+.viewM img {width: 100%;
+height: auto;}
+
+.viewM span {position: fixed;
+    right: 2vw;
+    top: 2vh;}
+
+.viewM i {font-size: 3vw;
+    color: #fff;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+opacity: 0.5;}
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@키프레임 */
+
+/* 아이콘 꽃잎 회전 */
+@keyframes icon {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+/* 호버시 크기 변하기 */
+@keyframes ho {
+    0% {
+        transform: scale(0.9)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0.9)
+    }
+
+}
+
+/* 메인 어포던스 디자인 움직임 */
+@keyframes aff01 {
+
+    0% {
+        top: 0
+    }
+
+    50% {
+        top: -1.2vw
+    }
+
+    100% {
+        top: 0
+    }
+
+}
+
+@keyframes aff02 {
+
+    0% {
+        top: 0
+    }
+
+    50% {
+        top: 1.2vw
+    }
+
+    100% {
+        top: 0
+    }
+
+}
+
+@keyframes affi {
+
+    0% {
+        transform: scale(0.8)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0.8)
+    }
+
+}
+
+
+
+/* 별 위치 움직이기 */
+@keyframes star01 {
+
+    0% {
+        transform: scale(0.8)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0.8)
+    }
+
+}
+
+@keyframes star02 {
+
+    0% {
+        transform: scale(0.5)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0.5)
+    }
+
+}

@@ -1,0 +1,300 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Train+One&display=swap');
+/* font-family: 'Major Mono Display', monospace;
+font-family: 'Train One', cursive; */
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #1c1c1c;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* html {overflow: hidden;
+    width: 100%;
+    height: 100%;} */
+
+body {
+    color: #1c1c1c;
+    /* width: 100%;
+    height: 100%; */
+    cursor: url('img/cursor.cur'),auto;
+
+}
+
+
+
+
+
+
+/* div 분리 */
+
+
+
+.art {
+    background-color: rgb(255, 252, 210);
+    width: 100%;
+    position: fixed;
+    transition: all 1s;
+    left: -100%;
+    top: 0;
+    z-index: 3;
+
+
+}
+
+
+
+.art h2 {
+    margin: 50px;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+.art h2:nth-child(1) {}
+
+.art h2:nth-child(1) {}
+
+
+/* home 설정 */
+
+.home {
+    background-color: rgb(255, 210, 210);
+    width: 100%;
+    position: fixed;
+    transition: all 1s;
+    left: 0;
+    top: 0;
+    z-index: 4;
+
+
+}
+
+
+
+/* home - menu 설정 */
+
+
+.home .homeBtn01 {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.home .homeBtn01 p {
+    position: absolute;
+    font-family: 'Train One', cursive;
+    color: #aaaaaa;
+    font-size: 5vw;
+    left: 5%;
+    top: 5%;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;;
+    opacity: 0;
+    transition: all 0.8s;
+    transform: translateX(-100px);
+}
+
+
+.home .homeBtn01 p:hover {
+    color: #ffc6ee;
+    animation: home 1s linear infinite;
+    text-decoration: underline;
+
+}
+
+.home .homeBtn01 p.show {
+    transform: translateX(0px);
+opacity: 1;}
+
+.home .homeBtn02 {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.5s;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+.home .homeBtn02 p {
+    position: absolute;
+    font-family: 'Train One', cursive;
+    color: #aaaaaa;
+    font-size: 5vw;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+    opacity: 0;
+    transition: all 0.8s;
+    transform: translateX(100px);
+}
+
+.home .homeBtn02 p:hover {
+    color: #88FFC9;
+    animation: home 1s linear infinite;
+    text-decoration: underline;
+}
+
+.home .homeBtn02 p.show {
+    transform: translateX(0px);
+opacity: 1;}
+
+
+
+
+/* home - mainTxt 설정 */
+
+.home .mainTxt {
+
+    width: 31vw;
+    height: 34vw;
+    font-family: 'Major Mono Display', monospace;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -15.5vw;
+    margin-left: -17vw;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.home .mainTxt01 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    z-index: 2;
+
+
+}
+
+.home .mainTxt01 p {
+    display: flex;
+}
+
+.home .mainTxt01 p:nth-child(2),
+.home .mainTxt01 p:nth-child(3) {
+    margin-top: 1vw;
+}
+
+
+/* 메인텍스트 컬러 변경 */
+.home .mainTxt01 em {
+    font-style: normal;
+    opacity: 0;
+    transition: all 5s;
+}
+
+.home .mainTxt01 p:nth-child(1) em:nth-child(1) {
+    color: #9993E5;
+}
+
+.home .mainTxt01 p:nth-child(1) em:nth-child(2) {
+    color: #FE54AA;
+}
+
+.home .mainTxt01 p:nth-child(1) em:nth-child(3) {
+    color: #fdcff2;
+}
+
+.home .mainTxt01 p:nth-child(1) em:nth-child(4) {
+    color: #88FFC9;
+}
+
+.home .mainTxt01 p:nth-child(2) em:nth-child(1) {
+    color: #88FFC9;
+}
+
+.home .mainTxt01 p:nth-child(2) em:nth-child(2) {
+    color: #C087FF;
+}
+
+.home .mainTxt01 p:nth-child(2) em:nth-child(3) {
+    color: #FE54AA;
+}
+
+.home .mainTxt01 p:nth-child(2) em:nth-child(4) {
+    color: #9993E5;
+}
+
+.home .mainTxt01 p:nth-child(3) em:nth-child(1) {
+    color: #fdcff2;
+}
+
+.home .mainTxt01 p:nth-child(3) em:nth-child(2) {
+    color: #FE54AA;
+}
+
+.home .mainTxt01 p:nth-child(3) em:nth-child(3) {
+    color: #88FFC9;
+}
+
+.home .mainTxt01 p:nth-child(3) em:nth-child(4) {
+    color: #C087FF;
+}
+
+.home .mainTxt01 em.show {opacity: 1;}
+
+
+
+
+.home .mainTxt02 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #dddd;
+}
+
+.home .mainTxt02 p {
+    margin-top: 1vw;
+    opacity: 0;
+    transition: all 5s;
+
+}
+
+.home .mainTxt02 p.show{opacity: 1;}
+
+
+
+
+
+
+@keyframes home {
+
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+
+};
+

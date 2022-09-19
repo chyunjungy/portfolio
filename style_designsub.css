@@ -1,0 +1,747 @@
+@charset "UTF-8";
+
+/* menu01(춘식) 디자인 페이지 설정$$$$$$$$$$$$$$$$$$$$ 수정 */
+/* 뒤로 가기 버튼 필요 */
+/* 아트 버튼 컬러 바뀌는거 해결하기 */
+
+.dsisub {
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: -1;
+    transition: all 1s;
+
+}
+
+.dsisub.on {
+    z-index: 3;
+}
+
+
+
+/* 디자인 서브페이지 네비 설정 */
+
+.subNav {width: 100%;
+height: 26vh;
+position: fixed;
+left: 00%;
+top: 0;
+z-index: 2;
+background-color: #fff;}
+.dsisub nav {
+    left: 10%;
+    width: 80%;
+    height: 26vh;
+    position: absolute;
+}
+
+.dsisub .subNav.aa {
+    background-color: #257585;
+}
+
+.dsisub .subNav.bb {
+    background-color: #4e106b;
+}
+
+.dsisub .subNav.on {
+    display: block;
+}
+
+/* design 프로필, 홈 버튼 설정 */
+
+.dsisub nav .dBtn {
+    position: absolute;
+    width: 12vw;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    top: -0.05vw;
+}
+
+.dsisub nav .dBtn p {
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+
+.dsisub nav .dBtn p img {
+    width: 5vw;
+    height: auto;
+}
+
+/* .dsisub 메뉴 설정 */
+.dsisub nav ul {
+    position: absolute;
+    width: 25vw;
+    height: 30%;
+    left: 50%;
+    top: 20%;
+    margin-left: -12.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Aboreto', cursive;
+
+
+}
+
+.dsisub nav li {width: 25%;
+    height: 45%;
+    text-align: center;}
+
+.dsisub nav li.on {
+    font-weight: bold;
+    border-bottom: 2px solid #1c1c1c;
+}
+
+.dsisub nav li.at {
+    border-color: #fff;
+}
+
+
+
+.dsisub nav li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 1vw;
+    cursor: url('img/click.cur'),auto;
+    padding: 5% 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.dsisub nav li a.on {
+    color: #fff;
+}
+
+/* .dsisub 아트버튼 설정 */
+
+.dsisub nav .artBtn {
+    position: absolute;
+    right: 20%;
+    top: 32%;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+.dsisub nav .artBtn p {
+    position: absolute;
+    font-size: 2.6vw;
+}
+
+.dsisub nav .artBtn p:nth-child(1) {
+    font-family: 'Rubik Bubbles', cursive;
+    color: #111;
+    left: 2px;
+    top: 2px;
+}
+
+.dsisub nav .artBtn p:nth-child(1).aa {
+    color: #38BCA7;
+}
+
+.dsisub nav .artBtn p:nth-child(1).bb {
+    color: #AF7AC9;
+}
+
+.dsisub nav .artBtn p:nth-child(1).cc {
+    color: #FF5BA8;
+}
+
+.dsisub nav .artBtn p:nth-child(1).dd {
+    color: #F3D9FF;
+}
+
+
+.dsisub nav .artBtn p:nth-child(2) {
+    font-family: 'Rubik Puddles', cursive;
+    left: 0;
+    top: 0;
+}
+
+.dsisub nav .artBtn p:nth-child(2).on {
+    color: #fff;
+}
+
+/* .dsisub 아이콘 설정 */
+
+.dsisub nav .icon01,
+.dsisub nav .icon02,
+.dsisub nav .icon03,
+.dsisub nav .icon04 {
+    position: absolute;
+    width: 5.5vw;
+    height: 5.5vw;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    cursor: url('img/click.cur'),auto;
+}
+
+.dsisub nav .icon01.on {
+    display: block;
+}
+
+.dsisub nav .icon02.on {
+    display: block;
+}
+
+.dsisub nav .icon03.on {
+    display: block;
+}
+
+.dsisub nav .icon04.on {
+    display: block;
+}
+
+.dsisub nav .icon01 p,
+.dsisub nav .icon02 p,
+.dsisub nav .icon03 p,
+.dsisub nav .icon04 p {
+    position: absolute;
+}
+
+.dsisub nav .icon01 p:nth-child(1),
+.dsisub nav .icon03 p:nth-child(1) {
+    background-image: url(img/design/icon_B01.png);
+    width: 2.6vw;
+    height: 2.6vw;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.3vw;
+    margin-left: -1.3vw;
+    background-size: cover;
+    background-position: center center;
+}
+
+.dsisub nav .icon01 p:nth-child(2),
+.dsisub nav .icon03 p:nth-child(2) {
+    width: 5.2vw;
+    height: 5.2vw;
+    left: 50%;
+    top: 50%;
+    margin-top: -2.6vw;
+    margin-left: -2.6vw;
+    background-image: url(img/design/icon_B02-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: icon 8s linear infinite;
+}
+
+
+
+/* .dsisub 아이콘 클릭시 컬러 변경 */
+
+.dsisub nav .icon02 p:nth-child(1),
+.dsisub nav .icon04 p:nth-child(1) {
+    background-image: url(img/design/icon_W01.png);
+    width: 2.6vw;
+    height: 2.6vw;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.3vw;
+    margin-left: -1.3vw;
+    background-size: cover;
+    background-position: center center;
+}
+
+.dsisub nav .icon02 p:nth-child(2),
+.dsisub nav .icon04 p:nth-child(2) {
+    width: 5.2vw;
+    height: 5.2vw;
+    left: 50%;
+    top: 50%;
+    margin-top: -2.6vw;
+    margin-left: -2.6vw;
+    background-image: url(img/design/icon_W02-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: icon 8s linear infinite;
+}
+
+
+
+/* 디자인 서브페이지 아티클 넓이 설정 */
+.dsisub article {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Aboreto', cursive;
+}
+
+
+/* 디자인 서브페이지 title 설정 */
+
+
+.dsisub .title {
+    width: 100%;
+    top: 26vh;
+    height: 8vw;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+}
+
+.dsisub .title .subBox {
+    width: 65%;
+    height: 100%;
+margin-left: 17.5%;
+display: flex;
+justify-content: space-between;
+align-items: center;}
+
+
+
+
+/* 디자인 서브페이지01 설정 */
+
+
+.dsisub .sub01 {
+    width: 100%;
+    background-color: #fff;
+
+    position: absolute;
+    left: 0%;
+    top: 0;
+
+
+}
+
+.dsisub .sub01.aa {
+    background-color: #257585;
+}
+
+.dsisub .sub01.on {
+    display: none;
+}
+
+
+
+
+.dsisub .sub01 .title.on {
+    background-color: #257585;
+}
+
+.dsisub .sub01 .title p {
+    width: 30vw;
+    height: 7vw;
+    background-image: url(img/design/sub01_title.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dsisub .sub01 .title p.on {
+    background-image: url(img/design/sub01_title-1.png);
+}
+
+
+.dsisub .sub01 .title ul {
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+
+.dsisub .sub01 .title li {}
+.dsisub .sub01 .title li:hover {background-color: #aa93e882;}
+.dsisub .sub01 .title li:hover a {color: #fff;}
+
+
+.dsisub .sub01 .title a {
+    padding: 0.2vw;
+    color: #AA93E8;
+    border: #AA93E8 solid 0.1vw;
+    border-radius: 0.2vw;
+    display: block;
+    cursor: url('img/click.cur'),auto;
+}
+
+.dsisub .sub01 .title a.on {
+    color: #fff;
+    background-color: #AA93E8;
+}
+
+.dsisub .sub01 article:nth-child(2) {
+    margin-top: 50vh;
+
+}
+
+.dsisub .sub01 article:nth-child(2)>div {
+    margin-top: 4vh;
+    width: 100%;
+    height: 40vw;
+}
+
+.dsisub .sub01 article>div>p:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+
+.dsisub .sub01 strong {
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 2vw;
+    color: #38BCA7;
+    border-bottom: #FF5BA8 solid 0.5vw;
+}
+
+.dsisub .sub01 strong.on {
+    border-color: #AA93E8;
+    color: #fff;
+}
+
+
+.dsisub .sub01 article:nth-child(2) span {
+    width: 2vw;
+    height: 2.5vw;
+    display: block;
+    background-image: url(img/design/sub01_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dsisub .sub01 article:nth-child(2) span.on {
+    background-image: url(img/design/sub01_02-1.png);
+}
+
+.dsisub .sub01 em {
+    font-style: normal;
+    font-weight: bold;
+    color: #143464;
+    font-size: 1.2vw;
+    margin-left: 0.5vw;
+}
+
+.dsisub .sub01 em.on {
+    color: #fff;
+}
+
+.dsisub .sub01 article:nth-child(2) p:nth-child(2) {
+    width: 100%;
+    height: 36.5vw;
+    margin-top: 1.5vh;
+    overflow: hidden;
+}
+
+.dsisub .sub01 article:nth-child(2) p:nth-child(2) img {
+    height: auto;
+    width: 100%;
+}
+
+.dsisub .sub01 article:nth-child(3) {
+    margin-top: 15vh;
+}
+
+.dsisub .sub01 article:nth-child(3) div {
+    width: 100%;
+
+}
+
+.dsisub .sub01 article:nth-child(3) p {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 4vh;
+}
+
+.dsisub .sub01 article:nth-child(3) img {
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* 디자인 서브페이지02 설정 */
+/* menu02(모네) 디자인 페이지 설정 */
+.dsisub .sub02 {
+    width: 100%;
+
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dsisub .sub02.aa {
+    background-color: #4e106b;
+}
+
+.dsisub .sub02.on {
+    display: none;
+}
+
+/* .dsisub .sub02 .title {
+    top: 26vh;
+    left: 17.5%;
+    height: 8vw;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+} */
+
+.dsisub .sub02 .title.on {
+    background-color: #4e106b;
+}
+
+.dsisub .sub02 .title p {
+    width: 30vw;
+    height: 7vw;
+    background-image: url(img/design/sub02_title.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dsisub .sub02 .title p.on {
+    background-image: url(img/design/sub02_title-1.png);
+}
+
+
+.dsisub .sub02 .title ul {
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+
+.dsisub .sub02 .title li {}
+
+.dsisub .sub02 .title a {
+    padding: 0.2vw;
+    color: #AA93E8;
+    border: #AA93E8 solid 0.1vw;
+    border-radius: 0.2vw;
+    display: block;
+    cursor: url('img/click.cur'),auto;
+}
+
+.dsisub .sub02 .title a.on {
+    color: #fff;
+    background-color: #AA93E8;
+}
+
+.dsisub .sub02 article:nth-child(2) {
+    margin-top: 50vh;
+
+
+}
+
+.dsisub .sub02 article:nth-child(2)>div {
+    margin-top: 4vh;
+    width: 100%;
+}
+
+/* 모네 디자인 이미지 크기 조정 */
+
+/* 메인 */
+.dsisub .sub02 .mo01 {
+    height: 40vw;
+
+}
+
+.dsisub .sub02 .mo01 .aniImg {
+    position: relative;
+    width: 100%;
+    height: 36.5vw;
+    margin-top: 1.5vh;
+    overflow: hidden;
+}
+
+
+.dsisub .sub02 .mo01 .aniImg p {
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.8s;
+    top: 0;
+    left: 0;
+}
+
+.dsisub .sub02 .mo01 .aniImg p img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* 메뉴1 */
+.dsisub .sub02 .mo02 {}
+
+.dsisub .sub02 .mo02 p:nth-child(2) {
+    width: 100%;
+    margin-top: 1.5vh;
+    overflow: hidden;
+}
+
+.dsisub .sub02 .mo02 p img {
+    width: 100%;
+    height: auto;
+}
+
+/* 메뉴2 */
+.dsisub .sub02 .mo03 {
+    height: 40vw;
+}
+
+.dsisub .sub02 .mo03 p:nth-child(2) {
+    width: 100%;
+    height: 36.5vw;
+    margin-top: 1.5vh;
+    overflow: hidden;
+}
+
+.dsisub .sub02 .mo03 p img {
+    width: 100%;
+    height: auto;
+}
+
+/* 메뉴3 */
+.dsisub .sub02 .mo04 {}
+
+.dsisub .sub02 .mo04>p:nth-child(2) {
+    background-color: #111;
+    width: 100%;
+    margin-top: 1.5vh;
+    overflow: hidden;
+}
+
+.dsisub .sub02 .mo04 img {
+    width: 100%;
+    height: auto;
+}
+
+.dsisub .sub02 .mo04>div {
+    display: flex;
+}
+
+.dsisub .sub02 .mo04>div p:nth-child(1) {
+    width: 40%;
+}
+
+.dsisub .sub02 .mo04>div p:nth-child(2) {
+    width: 60%;
+}
+
+
+/* 메뉴4 */
+.dsisub .sub02 .mo05 {
+    height: 40vw;
+
+}
+
+.dsisub .sub02 .mo05 .aniImg {
+    position: relative;
+    width: 100%;
+    height: 36vw;
+    margin-top: 1.5vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+.dsisub .sub02 .mo05 .aniImg p {
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.8s;
+    top: 0;
+    left: 0;
+}
+
+.dsisub .sub02 .mo05 .aniImg p img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* 모네 서브페이지 */
+
+
+.dsisub .sub02 article>div>p:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+
+.dsisub .sub02 strong {
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 2vw;
+    color: #AF7AC9;
+    border-bottom: #8B649D solid 0.5vw;
+}
+
+.dsisub .sub02 strong.on {
+    border-color: #FFE989;
+    color: #F3D9FF;
+}
+
+
+.dsisub .sub02 article:nth-child(2) span {
+    width: 2vw;
+    height: 2.5vw;
+    display: block;
+    background-image: url(img/design/sub02_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dsisub .sub02 article:nth-child(2) span.on {
+    background-image: url(img/design/sub02_02-1.png);
+}
+
+.dsisub .sub02 em {
+    font-style: normal;
+    font-weight: bold;
+    color: #65168A;
+    font-size: 1.2vw;
+    margin-left: 0.5vw;
+}
+
+.dsisub .sub02 em.on {
+    color: #FFE989;
+}
+
+
+
+
+
+
+/* 모네 컨셉뷰 */
+
+.dsisub .sub02 article:nth-child(3) {
+    margin-top: 15vh;
+}
+
+.dsisub .sub02 article:nth-child(3) div {
+    width: 100%;
+}
+
+.dsisub .sub02 article:nth-child(3) p {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 4vh;
+}
+
+.dsisub .sub02 article:nth-child(3) img {
+    height: auto;
+    width: 100%;
+}
